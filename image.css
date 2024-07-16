@@ -1,0 +1,1463 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "arial", sans-serif;
+}
+
+.background{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(Website-Background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+}
+
+.header{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #171747;
+    h1{
+        font-family: arial, sans-serif, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        font-style: italic;
+        font-style: bold;
+        text-align: center;
+        color: #ffffff;
+    }
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+/*Slideshow Frame Start*/
+.slider-frame{
+    width: 640px;
+    height: 360px;
+    margin-top: 100px;
+    margin-left: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+/*Slideshow Frame End*/
+
+/*Slideshow Images Start*/
+div{
+    .slider-images{
+    width: 500%;
+    height: 500px;
+    display: flex;
+    }
+    .slider-images input{
+    display: none;
+    }
+    .slider-image{
+        width: 20%;
+        transition: 1s;
+    }
+    .slider-image img{
+    width: 640px;
+    height: 360px;
+    }
+}
+/*Slideshow Images End*/
+
+/*Auto navigation Start*/
+.Navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 400px;
+    margin-top: 365px;
+    margin-left: 120px;
+    justify-content: center;
+}
+.Navigation-auto div{
+    border: 6px solid #171747;
+    padding: 8px;
+    border-radius: 20px;
+    transition: 0.1s;
+}
+.Navigation-auto div:not(:last-child){
+    margin-right: 23px;
+}
+div{
+#radio1:checked ~ .Navigation-auto .auto-butn1{
+    background: #ff0000;
+}
+#radio2:checked ~ .Navigation-auto .auto-butn2{
+    background: #ff0000;
+}
+#radio3:checked ~ .Navigation-auto .auto-butn3{
+    background: #ff0000;
+}
+#radio4:checked ~ .Navigation-auto .auto-butn4{
+    background: #ff0000;
+}
+#radio5:checked ~ .Navigation-auto .auto-butn5{
+    background: #ff0000;
+}
+#radio6:checked ~ .Navigation-auto .auto-butn6{
+    background: #ff0000;
+}
+#radio7:checked ~ .Navigation-auto .auto-butn7{
+    background: #ff0000;
+}
+#radio8:checked ~ .Navigation-auto .auto-butn8{
+    background: #ff0000;
+}
+#radio9:checked ~ .Navigation-auto .auto-butn9{
+    background: #ff0000;
+}
+#radio10:checked ~ .Navigation-auto .auto-butn10{
+    background: #ff0000;
+}
+#radio11:checked ~ .Navigation-auto .auto-butn11{
+    background: #ff0000;
+}
+#radio12:checked ~ .Navigation-auto .auto-butn12{
+    background: #ff0000;
+}
+#radio13:checked ~ .Navigation-auto .auto-butn13{
+    background: #ff0000;
+}
+}
+/*Auto navigation End*/
+
+/*manual navigation Start*/
+div{
+    .Navigation-Manual{
+    position: absolute;
+    width: 400px;
+    margin-top: -154px;
+    margin-left: 120px;
+    display: flex;
+    justify-content: center;
+    }
+    .Manual-btn{
+    border: 6px solid #171747;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    }
+    .Manual-btn:not(:last-child){
+    margin-right: 23px;
+    }
+    .Manual-btn:hover{
+        background:#ffffff ;
+    }
+}
+div{
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+#radio6:checked ~ .first{
+    margin-left: -100%;
+}
+#radio7:checked ~ .first{
+    margin-left: -120%;
+}
+#radio8:checked ~ .first{
+    margin-left: -140%;
+}
+#radio9:checked ~ .first{
+    margin-left: -160%;
+}
+#radio10:checked ~ .first{
+    margin-left: -180%;
+}
+#radio11:checked ~ .first{
+    margin-left: -200%;
+}
+#radio12:checked ~ .first{
+    margin-left: -220%;
+}
+#radio13:checked ~ .first{
+    margin-left: -240%;
+}
+
+}
+/*manual navigation End*/
+p1{
+    position: absolute;
+    position: fixed;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    background-color: #171747;
+    color: #ffffff;
+    border-style: solid;
+    border-width: 6px;
+    border-color: #ff9b00;
+    border-radius: 10px;
+    padding: 10px;
+    align-self: center;
+    margin-top: 40px;
+    margin-left: 400px;
+    font-style: italic;
+    font-style: bold;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.intro{
+    position: absolute;
+    position: fixed;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #171747;
+    color: #ffffff;
+    border-style: solid;
+    border-width: 6px;
+    border-color: #ff9b00;
+    border-radius: 10px;
+    padding: 10px;
+    align-self: center;
+    margin-top: -150px;
+    margin-left: -110px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h2{
+    font-size: 40px;
+}
+p2{
+    font-size: 20px;
+    font-style: italic;
+}
+h3{
+    font-size: 30px;
+}
+.Profile-Banner{
+    width: 495px;
+    position: absolute;
+    position: fixed;
+    margin-top: -370px;
+    margin-left: -110px;
+    border-style: solid;
+    border-width: 6px;
+    border-color: #ff9b00;
+    border-radius: 10px;
+    border-image-repeat: no-repeat;
+    z-index: 1;
+}
+
+@media (max-width: 1170px) {
+    .slider-frame{
+        margin-left: 350px;
+    }
+    p1{
+        margin-left: 350px;
+    }
+    .intro{
+        width: 450px;
+        margin-top: -170px;
+        margin-left: -105px;
+    }
+    .Profile-Banner{
+        width: 450px;
+        margin-left: -105px;
+    }
+    h2{
+        font-size: 38px;
+    }
+    p2{
+        font-size: 18px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 28px;
+    }
+}
+@media (max-width: 1110px) {
+    .slider-frame{
+        margin-left: 300px;
+    }
+    p1{
+        margin-left: 300px;
+    }
+    .intro{
+        width: 380px;
+        margin-top: -200px;
+        margin-left: -100px;
+    }
+    .Profile-Banner{
+        width: 380px;
+        margin-left: -100px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    p2{
+        font-size: 15px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 25px;
+    }
+}
+@media (max-width: 1050px) {
+    .slider-frame{
+        margin-left: 250px;
+    }
+    p1{
+        margin-left: 250px;
+    }
+    .intro{
+        width: 330px;
+        margin-top: -220px;
+        margin-left: -95px;
+    }
+    .Profile-Banner{
+        width: 330px;
+        margin-left: -95px;
+    }
+    h2{
+        font-size: 33px;
+    }
+    p2{
+        font-size: 13px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 23px;
+    }
+}
+@media (max-width: 1000px) {
+    .slider-frame{
+        margin-left: 200px;
+    }
+    p1{
+        margin-left: 200px;
+
+    }
+    .intro{
+        width: 260px;
+        margin-top: -250px;
+        margin-left: -90px;
+    }
+    .Profile-Banner{
+        width: 260px;
+        margin-left: -90px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    p2{
+        font-size: 10px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 20px;
+    }
+}
+@media (max-width: 950px) {
+    .slider-frame{
+        margin-left: 150px;
+    }
+    p1{
+        margin-left: 150px;
+    }
+    .intro{
+        width: 210px;
+        margin-top: -270px;
+        margin-left: -85px;
+    }
+    .Profile-Banner{
+        width: 210px;
+        margin-left: -85px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    p2{
+        font-size: 8px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 18px;
+    }
+}
+@media (max-width: 890px) {
+    .slider-frame{
+        margin-left: 100px;
+    }
+    p1{
+        margin-left: 100px;
+    }
+    .intro{
+        width: 170px;
+        margin-top: -285px;
+        margin-left: -80px;
+        padding-right: 0px;
+    }
+    .Profile-Banner{
+        width: 170px;
+        margin-left: -80px;
+    }
+    h2{
+        font-size: 25px;
+        overflow: hidden;
+
+    }
+    p2{
+        font-size: 5px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 15px;
+    }
+}
+@media (max-width: 830px) {
+    .slider-frame{
+        margin-left: 50px;
+    }
+    p1{
+        margin-left: 50px;
+    }
+    .intro{
+        width: 120px;
+        margin-top: -305px;
+        margin-left: -75px;
+        padding-right: 0px;
+    }
+    .Profile-Banner{
+        width: 120px;
+        margin-left: -75px;
+    }
+    h2{
+        font-size: 12px;
+        overflow: hidden;
+
+    }
+    p2{
+        font-size: 3px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 9px;
+    }
+}
+@media (max-width: 770px) {
+    .slider-frame{
+        margin-left: 0px;
+    }
+    p1{
+        margin-left: 0px;
+    }
+    .intro{
+        width: 70px;
+        margin-top: -325px;
+        margin-left: -73px;
+        padding-right: 0px;
+    }
+    .Profile-Banner{
+        width: 70px;
+        margin-left: -73px;
+    }
+    h2{
+        font-size: 6px;
+        overflow: hidden;
+
+    }
+    p2{
+        font-size: 1px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 3px;
+    }
+}
+@media (max-width: 720px) {
+    .slider-frame{
+        margin-left: -50px;
+    }
+    p1{
+        margin-left: -50px;
+    }
+    .intro{
+        width: 0px;
+        border-style: none;
+        background-color: transparent;
+
+    }
+    .Profile-Banner{
+        width: 0px;
+        border-style: none;
+        background-color: transparent;
+    }
+    h2{
+        font-size: 0px;
+    }
+    p2{
+        font-size: 0px;
+    }
+    h3{
+        font-size: 0px;
+    }
+}
+@media (max-width: 1082px) {
+    .slider-frame{
+        margin-top: 150px;
+    }
+}
+@media (max-width: 598px) {
+    .slider-frame{
+        margin-top: 200px;
+    }
+}
+@media (orientation: landscape){
+@media (max-height: 560px){
+    .intro{
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;
+    }
+    h2{
+        font-size: 0px;
+    }
+    p2{
+        font-size: 0px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 0px;
+    }
+    .Profile-Banner{
+        width: 0px;
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;  
+    }
+    div{
+        .Navigation-Manual{
+        position: absolute;
+        width: 400px;
+        margin-top: -518px;
+        margin-left: 120px;
+        display: flex;
+        align-items: vertical;
+        justify-content: center;
+        }
+        .Manual-btn:not(:last-child){
+        margin-right: 23px;
+        }
+    }
+    .Navigation-auto{
+        position: absolute;
+        display: flex;
+        align-items: vertical;
+        width: 400px;
+        margin-top: 0px;
+        margin-left: 120px;
+        justify-content: center;
+    }
+    .Navigation-auto div:not(:last-child){
+        margin-right: 23px;
+    }
+    .slider-frame{
+        margin-left: 150px;
+    }
+}
+@media (max-height: 512px){
+    .slider-frame{
+        margin-top: 120px;
+    }
+}
+@media (max-height: 496px){
+    .intro{
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;
+    }
+    h2{
+        font-size: 0px;
+    }
+    p2{
+        font-size: 0px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 0px;
+    }
+    .Profile-Banner{
+        width: 0px;
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;  
+    }
+    div{
+        .Navigation-Manual{
+        position: absolute;
+        width: 400px;
+        margin-top: -498px;
+        margin-left: 120px;
+        display: flex;
+        align-items: vertical;
+        justify-content: center;
+        }
+        .Manual-btn:not(:last-child){
+        margin-right: 23px;
+        }
+    }
+    .Navigation-auto{
+        position: absolute;
+        display: flex;
+        align-items: vertical;
+        width: 400px;
+        margin-top: 20px;
+        margin-left: 120px;
+        justify-content: center;
+    }
+    .Navigation-auto div:not(:last-child){
+        margin-right: 23px;
+    }
+    .slider-frame{
+        margin-left: 150px;
+    }
+}
+@media (max-height: 484px){
+    .slider-frame{
+        margin-top: 100px;
+    }
+    .intro{
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;
+    }
+    h2{
+        font-size: 0px;
+    }
+    p2{
+        font-size: 0px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 0px;
+    }
+    .Profile-Banner{
+        width: 0px;
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;  
+    }
+    div{
+        .Navigation-Manual{
+        position: absolute;
+        width: 400px;
+        margin-top: -478px;
+        margin-left: 120px;
+        display: flex;
+        align-items: vertical;
+        justify-content: center;
+        }
+        .Manual-btn:not(:last-child){
+        margin-right: 23px;
+        }
+    }
+    .Navigation-auto{
+        position: absolute;
+        display: flex;
+        align-items: vertical;
+        width: 400px;
+        margin-top: 40px;
+        margin-left: 120px;
+        justify-content: center;
+    }
+    .Navigation-auto div:not(:last-child){
+        margin-right: 23px;
+    }
+    .slider-frame{
+        margin-left: 150px;
+    }
+}
+@media (max-height: 462px){
+    .slider-frame{
+        margin-top: 100px;
+    }
+}
+@media (max-height: 444px){
+    .slider-frame{
+        margin-top: 60px;
+    }
+    .intro{
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;
+    }
+    h2{
+        font-size: 0px;
+    }
+    p2{
+        font-size: 0px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 0px;
+    }
+    .Profile-Banner{
+        width: 0px;
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;  
+    }
+    div{
+        .Navigation-Manual{
+        position: absolute;
+        width: 400px;
+        margin-top: -438px;
+        margin-left: 120px;
+        display: flex;
+        align-items: vertical;
+        justify-content: center;
+        }
+        .Manual-btn:not(:last-child){
+        margin-right: 23px;
+        }
+    }
+    .Navigation-auto{
+        position: absolute;
+        display: flex;
+        align-items: vertical;
+        width: 400px;
+        margin-top: 80px;
+        margin-left: 120px;
+        justify-content: center;
+    }
+    .Navigation-auto div:not(:last-child){
+        margin-right: 23px;
+    }
+    .slider-frame{
+        margin-left: 150px;
+    }
+}
+@media (max-height: 422px){
+    .slider-frame{
+        margin-top: 40px;
+    }
+}
+@media (max-height: 404px){
+    .slider-frame{
+        margin-top: 20px;
+    }
+    .intro{
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;
+    }
+    h2{
+        font-size: 0px;
+    }
+    p2{
+        font-size: 0px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 0px;
+    }
+    .Profile-Banner{
+        width: 0px;
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;  
+    }
+    div{
+        .Navigation-Manual{
+        position: absolute;
+        width: 400px;
+        margin-top: -388px;
+        margin-left: 120px;
+        display: flex;
+        align-items: vertical;
+        justify-content: center;
+        }
+        .Manual-btn:not(:last-child){
+        margin-right: 23px;
+        }
+    }
+    .Navigation-auto{
+        position: absolute;
+        display: flex;
+        align-items: vertical;
+        width: 400px;
+        margin-top: 130px;
+        margin-left: 120px;
+        justify-content: center;
+    }
+    .Navigation-auto div:not(:last-child){
+        margin-right: 23px;
+    }
+    .slider-frame{
+        margin-left: 150px;
+    }
+}
+@media (max-height: 381px){
+    .slider-frame{
+        margin-top: 0px;
+    }
+}
+@media (max-height: 362px){
+    .slider-frame{
+        margin-top: -20px;
+    }
+    .intro{
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;
+    }
+    h2{
+        font-size: 0px;
+    }
+    p2{
+        font-size: 0px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 0px;
+    }
+    .Profile-Banner{
+        width: 0px;
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;  
+    }
+    div{
+        .Navigation-Manual{
+        position: absolute;
+        width: 400px;
+        margin-top: -368px;
+        margin-left: 120px;
+        display: flex;
+        align-items: vertical;
+        justify-content: center;
+        }
+        .Manual-btn:not(:last-child){
+        margin-right: 23px;
+        }
+    }
+    .Navigation-auto{
+        position: absolute;
+        display: flex;
+        align-items: vertical;
+        width: 400px;
+        margin-top: 150px;
+        margin-left: 120px;
+        justify-content: center;
+    }
+    .Navigation-auto div:not(:last-child){
+        margin-right: 23px;
+    }
+    .slider-frame{
+        margin-left: 150px;
+    }
+}
+@media (max-height: 341px){
+    .slider-frame{
+        margin-top: -40px;
+    }
+    .intro{
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;
+    }
+    h2{
+        font-size: 0px;
+    }
+    p2{
+        font-size: 0px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 0px;
+    }
+    .Profile-Banner{
+        width: 0px;
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;  
+    }
+    div{
+        .Navigation-Manual{
+        position: absolute;
+        width: 400px;
+        margin-top: -338px;
+        margin-left: 120px;
+        display: flex;
+        align-items: vertical;
+        justify-content: center;
+        }
+        .Manual-btn:not(:last-child){
+        margin-right: 23px;
+        }
+    }
+    .Navigation-auto{
+        position: absolute;
+        display: flex;
+        align-items: vertical;
+        width: 400px;
+        margin-top: 180px;
+        margin-left: 120px;
+        justify-content: center;
+    }
+    .Navigation-auto div:not(:last-child){
+        margin-right: 23px;
+    }
+    .slider-frame{
+        margin-left: 150px;
+    }
+}
+@media (max-height: 321px){
+    .slider-frame{
+        margin-top: -60px;
+    }
+}
+@media (max-height: 300px){
+    .slider-frame{
+        margin-top: -80px;
+    }
+    .intro{
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;
+    }
+    h2{
+        font-size: 0px;
+    }
+    p2{
+        font-size: 0px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 0px;
+    }
+    .Profile-Banner{
+        width: 0px;
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;  
+    }
+    div{
+        .Navigation-Manual{
+        position: absolute;
+        width: 400px;
+        margin-top: -308px;
+        margin-left: 120px;
+        display: flex;
+        align-items: vertical;
+        justify-content: center;
+        }
+        .Manual-btn:not(:last-child){
+        margin-right: 23px;
+        }
+    }
+    .Navigation-auto{
+        position: absolute;
+        display: flex;
+        align-items: vertical;
+        width: 400px;
+        margin-top: 210px;
+        margin-left: 120px;
+        justify-content: center;
+    }
+    .Navigation-auto div:not(:last-child){
+        margin-right: 23px;
+    }
+    .slider-frame{
+        margin-left: 150px;
+    }
+}
+@media (max-height: 282px){
+    .slider-frame{
+        margin-top: -100px;
+    }
+    .intro{
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;
+    }
+    h2{
+        font-size: 0px;
+    }
+    p2{
+        font-size: 0px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 0px;
+    }
+    .Profile-Banner{
+        width: 0px;
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;  
+    }
+    div{
+        .Navigation-Manual{
+        position: absolute;
+        width: 400px;
+        margin-top: -288px;
+        margin-left: 120px;
+        display: flex;
+        align-items: vertical;
+        justify-content: center;
+        }
+        .Manual-btn:not(:last-child){
+        margin-right: 23px;
+        }
+    }
+    .Navigation-auto{
+        position: absolute;
+        display: flex;
+        align-items: vertical;
+        width: 400px;
+        margin-top: 230px;
+        margin-left: 120px;
+        justify-content: center;
+    }
+    .Navigation-auto div:not(:last-child){
+        margin-right: 23px;
+    }
+    .slider-frame{
+        margin-left: 150px;
+    }
+}
+@media (max-height: 262px){
+    .slider-frame{
+        margin-top: -120px;
+    }
+    .intro{
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;
+    }
+    h2{
+        font-size: 0px;
+    }
+    p2{
+        font-size: 0px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 0px;
+    }
+    .Profile-Banner{
+        width: 0px;
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;  
+    }
+    div{
+        .Navigation-Manual{
+        position: absolute;
+        width: 400px;
+        margin-top: -268px;
+        margin-left: 120px;
+        display: flex;
+        align-items: vertical;
+        justify-content: center;
+        }
+        .Manual-btn:not(:last-child){
+        margin-right: 23px;
+        }
+    }
+    .Navigation-auto{
+        position: absolute;
+        display: flex;
+        align-items: vertical;
+        width: 400px;
+        margin-top: 250px;
+        margin-left: 120px;
+        justify-content: center;
+    }
+    .Navigation-auto div:not(:last-child){
+        margin-right: 23px;
+    }
+    .slider-frame{
+        margin-left: 150px;
+    }
+}
+@media (max-height: 242px){
+    .slider-frame{
+        margin-top: -140px;
+    }
+    .intro{
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;
+    }
+    h2{
+        font-size: 0px;
+    }
+    p2{
+        font-size: 0px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 0px;
+    }
+    .Profile-Banner{
+        width: 0px;
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;  
+    }
+    div{
+        .Navigation-Manual{
+        position: absolute;
+        width: 400px;
+        margin-top: -258px;
+        margin-left: 120px;
+        display: flex;
+        align-items: vertical;
+        justify-content: center;
+        }
+        .Manual-btn:not(:last-child){
+        margin-right: 23px;
+        }
+    }
+    .Navigation-auto{
+        position: absolute;
+        display: flex;
+        align-items: vertical;
+        width: 400px;
+        margin-top: 260px;
+        margin-left: 120px;
+        justify-content: center;
+    }
+    .Navigation-auto div:not(:last-child){
+        margin-right: 23px;
+    }
+    .slider-frame{
+        margin-left: 150px;
+    }
+}
+@media (max-height: 222px){
+    .slider-frame{
+        margin-top: -160px;
+    }
+    .intro{
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;
+    }
+    h2{
+        font-size: 0px;
+    }
+    p2{
+        font-size: 0px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 0px;
+    }
+    .Profile-Banner{
+        width: 0px;
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;  
+    }
+    div{
+        .Navigation-Manual{
+        position: absolute;
+        width: 400px;
+        margin-top: -238px;
+        margin-left: 120px;
+        display: flex;
+        align-items: vertical;
+        justify-content: center;
+        }
+        .Manual-btn:not(:last-child){
+        margin-right: 23px;
+        }
+    }
+    .Navigation-auto{
+        position: absolute;
+        display: flex;
+        align-items: vertical;
+        width: 400px;
+        margin-top: 280px;
+        margin-left: 120px;
+        justify-content: center;
+    }
+    .Navigation-auto div:not(:last-child){
+        margin-right: 23px;
+    }
+    .slider-frame{
+        margin-left: 150px;
+    }
+}
+@media (max-height: 202px){
+    .slider-frame{
+        margin-top: -180px;
+    }
+    .intro{
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;
+    }
+    h2{
+        font-size: 0px;
+    }
+    p2{
+        font-size: 0px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 0px;
+    }
+    .Profile-Banner{
+        width: 0px;
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;  
+    }
+    div{
+        .Navigation-Manual{
+        position: absolute;
+        width: 400px;
+        margin-top: -218px;
+        margin-left: 120px;
+        display: flex;
+        align-items: vertical;
+        justify-content: center;
+        }
+        .Manual-btn:not(:last-child){
+        margin-right: 23px;
+        }
+    }
+    .Navigation-auto{
+        position: absolute;
+        display: flex;
+        align-items: vertical;
+        width: 400px;
+        margin-top: 300px;
+        margin-left: 120px;
+        justify-content: center;
+    }
+    .Navigation-auto div:not(:last-child){
+        margin-right: 23px;
+    }
+    .slider-frame{
+        margin-left: 150px;
+    }
+}
+@media (max-height: 182px){
+    .slider-frame{
+        margin-top: -200px;
+    }
+    .intro{
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;
+    }
+    h2{
+        font-size: 0px;
+    }
+    p2{
+        font-size: 0px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 0px;
+    }
+    .Profile-Banner{
+        width: 0px;
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;  
+    }
+    div{
+        .Navigation-Manual{
+        position: absolute;
+        width: 400px;
+        margin-top: -188px;
+        margin-left: 120px;
+        display: flex;
+        align-items: vertical;
+        justify-content: center;
+        }
+        .Manual-btn:not(:last-child){
+        margin-right: 23px;
+        }
+    }
+    .Navigation-auto{
+        position: absolute;
+        display: flex;
+        align-items: vertical;
+        width: 400px;
+        margin-top: 330px;
+        margin-left: 120px;
+        justify-content: center;
+    }
+    .Navigation-auto div:not(:last-child){
+        margin-right: 23px;
+    }
+    .slider-frame{
+        margin-left: 150px;
+    }
+}
+@media (max-height: 162px){
+    .slider-frame{
+        margin-top: -220px;
+    }
+}
+}
+@media (orientation: portrait) {
+    div{
+        .slider-images{
+        width: 500%;
+        height: 500px;
+        display: flex;
+        }
+        .slider-images input{
+        display: none;
+        }
+        .slider-image{
+            width: 20%;
+            transition: 1s;
+        }
+        .slider-image img{
+        width: 640px;
+        height: 360px;
+        }
+    }
+    .slider-frame{
+        width: 640px;
+        height: 360px;
+        margin-top: 150px;
+        margin-left: 75px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    p1{
+        position: absolute;
+        position: fixed;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        background-color: #171747;
+        color: #ffffff;
+        border-style: solid;
+        border-width: 6px;
+        border-color: #ff9b00;
+        border-radius: 10px;
+        padding: 10px;
+        align-self: center;
+        margin-top: 50px;
+        margin-left: 50px;
+        font-style: italic;
+        font-style: bold;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    .intro{
+        position: absolute;
+        position: fixed;
+        width: 800px;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #171747;
+        color: #ffffff;
+        border-style: solid;
+        border-width: 6px;
+        border-color: #ff9b00;
+        border-radius: 10px;
+        padding: 10px;
+        align-self: center;
+        margin-top: 570px;
+        margin-left: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    h2{
+        font-size: 60px;
+    }
+    p2{
+        font-size: 40px;
+        font-style: italic;
+    }
+    h3{
+        font-size: 50px;
+    }
+    .Profile-Banner{
+        width: 800px;
+        position: absolute;
+        position: fixed;
+        margin-top: 220px;
+        margin-left: 0px;
+        border-style: solid;
+        border-width: 6px;
+        border-color: #ff9b00;
+        border-radius: 10px;
+        border-image-repeat: no-repeat;
+        z-index: 1;
+    }
+    div{
+        .Navigation-Manual{
+        position: absolute;
+        width: 400px;
+        margin-top: -154px;
+        margin-left: 120px;
+        display: flex;
+        justify-content: center;
+        }
+        .Manual-btn{
+        border: 6px solid #171747;
+        padding: 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.5s;
+        }
+        .Manual-btn:not(:last-child){
+        margin-right: 30px;
+        }
+        .Manual-btn:hover{
+            background:#ffffff ;
+        }
+    }
+    .Navigation-auto{
+        position: absolute;
+        display: flex;
+        width: 400px;
+        margin-top: 365px;
+        margin-left: 120px;
+        justify-content: center;
+    }
+    .Navigation-auto div{
+        border: 6px solid #171747;
+        padding: 15px;
+        border-radius: 20px;
+        transition: 0.1s;
+    }
+    .Navigation-auto div:not(:last-child){
+        margin-right: 30px;
+    }
+}
