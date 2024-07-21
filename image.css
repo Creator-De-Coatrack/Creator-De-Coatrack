@@ -274,7 +274,33 @@ h3{
     z-index: 1;
     overflow: hidden;
 }
-
+.slider-btn{
+    border: none;
+    align-self: center;
+    height: 360px;
+    width: 100px;
+    text-align: center;
+    text-size-adjust: 100px 300px;
+    font-size: 100px;
+    position: fixed;
+    outline: none;
+    background: #000;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 10px auto;
+    margin-bottom: 150px;
+    margin-left: 540px;
+    z-index: 2000;
+    opacity: 20%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.slider-btn:hover{
+    opacity: 50%;
+}
+.slider-btn:not(:last-child){
+    margin-left: -0px;
+}
 @media (max-width: 1170px) {
     .slider-frame{
         margin-left: 350px;
