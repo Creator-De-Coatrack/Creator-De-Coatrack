@@ -290,10 +290,17 @@ h3{
     margin: 10px auto;
     margin-bottom: 150px;
     margin-left: 540px;
-    z-index: 2000;
+    z-index: 500;
     opacity: 20%;
-    border-radius: 10px;
     transition: 0.5s;
+}
+#prev{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#next{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .slider-btn:hover{
     opacity: 50%;
