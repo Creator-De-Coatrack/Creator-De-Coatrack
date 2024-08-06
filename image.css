@@ -94,7 +94,7 @@ div{
     transition: 0.1s;
 }
 .Navigation-auto div:not(:last-child){
-    margin-right: 23px;
+    margin-right: 13px;
 }
 div{
 #radio1:checked ~ .Navigation-auto .auto-butn1{
@@ -136,6 +136,15 @@ div{
 #radio13:checked ~ .Navigation-auto .auto-butn13{
     background: #ff0000;
 }
+#radio14:checked ~ .Navigation-auto .auto-butn14{
+    background: #ff0000;
+}
+#radio15:checked ~ .Navigation-auto .auto-butn15{
+    background: #ff0000;
+}
+#radio16:checked ~ .Navigation-auto .auto-butn16{
+    background: #ff0000;
+}
 }
 /*Auto navigation End*/
 
@@ -157,7 +166,7 @@ div{
     transition: 0.5s;
     }
     .Manual-btn:not(:last-child){
-    margin-right: 23px;
+    margin-right: 13px;
     }
     .Manual-btn:hover{
         background:#ffffff ;
@@ -202,6 +211,15 @@ div{
 }
 #radio13:checked ~ .first{
     margin-left: -240%;
+}
+#radio14:checked ~ .first{
+    margin-left: -260%;
+}
+#radio15:checked ~ .first{
+    margin-left: -280%;
+}
+#radio16:checked ~ .first{
+    margin-left: -300%;
 }
 
 }
@@ -562,11 +580,6 @@ h3{
         font-size: 0px;
     }
 }
-@media (max-width: 1082px) {
-    .slider-frame{
-        margin-top: 150px;
-    }
-}
 @media (max-width: 598px) {
     .slider-frame{
         margin-top: 200px;
@@ -605,9 +618,6 @@ h3{
         align-items: vertical;
         justify-content: center;
         }
-        .Manual-btn:not(:last-child){
-        margin-right: 23px;
-        }
     }
     .Navigation-auto{
         position: absolute;
@@ -617,9 +627,6 @@ h3{
         margin-top: 0px;
         margin-left: 120px;
         justify-content: center;
-    }
-    .Navigation-auto div:not(:last-child){
-        margin-right: 23px;
     }
     .slider-frame{
         margin-left: 150px;
@@ -662,9 +669,6 @@ h3{
         align-items: vertical;
         justify-content: center;
         }
-        .Manual-btn:not(:last-child){
-        margin-right: 23px;
-        }
     }
     .Navigation-auto{
         position: absolute;
@@ -674,9 +678,6 @@ h3{
         margin-top: 20px;
         margin-left: 120px;
         justify-content: center;
-    }
-    .Navigation-auto div:not(:last-child){
-        margin-right: 23px;
     }
     .slider-frame{
         margin-left: 150px;
@@ -717,9 +718,6 @@ h3{
         align-items: vertical;
         justify-content: center;
         }
-        .Manual-btn:not(:last-child){
-        margin-right: 23px;
-        }
     }
     .Navigation-auto{
         position: absolute;
@@ -729,9 +727,6 @@ h3{
         margin-top: 40px;
         margin-left: 120px;
         justify-content: center;
-    }
-    .Navigation-auto div:not(:last-child){
-        margin-right: 23px;
     }
     .slider-frame{
         margin-left: 150px;
@@ -777,9 +772,6 @@ h3{
         align-items: vertical;
         justify-content: center;
         }
-        .Manual-btn:not(:last-child){
-        margin-right: 23px;
-        }
     }
     .Navigation-auto{
         position: absolute;
@@ -789,9 +781,6 @@ h3{
         margin-top: 80px;
         margin-left: 120px;
         justify-content: center;
-    }
-    .Navigation-auto div:not(:last-child){
-        margin-right: 23px;
     }
     .slider-frame{
         margin-left: 150px;
@@ -837,9 +826,6 @@ h3{
         align-items: vertical;
         justify-content: center;
         }
-        .Manual-btn:not(:last-child){
-        margin-right: 23px;
-        }
     }
     .Navigation-auto{
         position: absolute;
@@ -849,9 +835,6 @@ h3{
         margin-top: 130px;
         margin-left: 120px;
         justify-content: center;
-    }
-    .Navigation-auto div:not(:last-child){
-        margin-right: 23px;
     }
     .slider-frame{
         margin-left: 150px;
@@ -897,9 +880,6 @@ h3{
         align-items: vertical;
         justify-content: center;
         }
-        .Manual-btn:not(:last-child){
-        margin-right: 23px;
-        }
     }
     .Navigation-auto{
         position: absolute;
@@ -909,9 +889,6 @@ h3{
         margin-top: 150px;
         margin-left: 120px;
         justify-content: center;
-    }
-    .Navigation-auto div:not(:last-child){
-        margin-right: 23px;
     }
     .slider-frame{
         margin-left: 150px;
@@ -952,9 +929,6 @@ h3{
         align-items: vertical;
         justify-content: center;
         }
-        .Manual-btn:not(:last-child){
-        margin-right: 23px;
-        }
     }
     .Navigation-auto{
         position: absolute;
@@ -964,9 +938,6 @@ h3{
         margin-top: 180px;
         margin-left: 120px;
         justify-content: center;
-    }
-    .Navigation-auto div:not(:last-child){
-        margin-right: 23px;
     }
     .slider-frame{
         margin-left: 150px;
@@ -1012,9 +983,6 @@ h3{
         align-items: vertical;
         justify-content: center;
         }
-        .Manual-btn:not(:last-child){
-        margin-right: 23px;
-        }
     }
     .Navigation-auto{
         position: absolute;
@@ -1024,9 +992,6 @@ h3{
         margin-top: 210px;
         margin-left: 120px;
         justify-content: center;
-    }
-    .Navigation-auto div:not(:last-child){
-        margin-right: 23px;
     }
     .slider-frame{
         margin-left: 150px;
@@ -1067,9 +1032,6 @@ h3{
         align-items: vertical;
         justify-content: center;
         }
-        .Manual-btn:not(:last-child){
-        margin-right: 23px;
-        }
     }
     .Navigation-auto{
         position: absolute;
@@ -1079,9 +1041,6 @@ h3{
         margin-top: 230px;
         margin-left: 120px;
         justify-content: center;
-    }
-    .Navigation-auto div:not(:last-child){
-        margin-right: 23px;
     }
     .slider-frame{
         margin-left: 150px;
@@ -1122,9 +1081,6 @@ h3{
         align-items: vertical;
         justify-content: center;
         }
-        .Manual-btn:not(:last-child){
-        margin-right: 23px;
-        }
     }
     .Navigation-auto{
         position: absolute;
@@ -1134,9 +1090,6 @@ h3{
         margin-top: 250px;
         margin-left: 120px;
         justify-content: center;
-    }
-    .Navigation-auto div:not(:last-child){
-        margin-right: 23px;
     }
     .slider-frame{
         margin-left: 150px;
@@ -1177,9 +1130,6 @@ h3{
         align-items: vertical;
         justify-content: center;
         }
-        .Manual-btn:not(:last-child){
-        margin-right: 23px;
-        }
     }
     .Navigation-auto{
         position: absolute;
@@ -1189,9 +1139,6 @@ h3{
         margin-top: 260px;
         margin-left: 120px;
         justify-content: center;
-    }
-    .Navigation-auto div:not(:last-child){
-        margin-right: 23px;
     }
     .slider-frame{
         margin-left: 150px;
@@ -1232,9 +1179,6 @@ h3{
         align-items: vertical;
         justify-content: center;
         }
-        .Manual-btn:not(:last-child){
-        margin-right: 23px;
-        }
     }
     .Navigation-auto{
         position: absolute;
@@ -1244,9 +1188,6 @@ h3{
         margin-top: 280px;
         margin-left: 120px;
         justify-content: center;
-    }
-    .Navigation-auto div:not(:last-child){
-        margin-right: 23px;
     }
     .slider-frame{
         margin-left: 150px;
@@ -1287,9 +1228,6 @@ h3{
         align-items: vertical;
         justify-content: center;
         }
-        .Manual-btn:not(:last-child){
-        margin-right: 23px;
-        }
     }
     .Navigation-auto{
         position: absolute;
@@ -1299,9 +1237,6 @@ h3{
         margin-top: 300px;
         margin-left: 120px;
         justify-content: center;
-    }
-    .Navigation-auto div:not(:last-child){
-        margin-right: 23px;
     }
     .slider-frame{
         margin-left: 150px;
@@ -1342,9 +1277,6 @@ h3{
         align-items: vertical;
         justify-content: center;
         }
-        .Manual-btn:not(:last-child){
-        margin-right: 23px;
-        }
     }
     .Navigation-auto{
         position: absolute;
@@ -1354,9 +1286,6 @@ h3{
         margin-top: 330px;
         margin-left: 120px;
         justify-content: center;
-    }
-    .Navigation-auto div:not(:last-child){
-        margin-right: 23px;
     }
     .slider-frame{
         margin-left: 150px;
@@ -1395,7 +1324,6 @@ h3{
         border-radius: 10px;
         overflow: hidden;
     }
-
     p1{
         position: absolute;
         position: fixed;
@@ -1470,13 +1398,13 @@ h3{
         }
         .Manual-btn{
         border: 6px solid #171747;
-        padding: 15px;
+        padding: 14px;
         border-radius: 20px;
         cursor: pointer;
         transition: 0.5s;
         }
         .Manual-btn:not(:last-child){
-        margin-right: 30px;
+        margin-right: 20px;
         }
         .Manual-btn:hover{
             background:#ffffff ;
@@ -1492,11 +1420,11 @@ h3{
     }
     .Navigation-auto div{
         border: 6px solid #171747;
-        padding: 15px;
+        padding: 14px;
         border-radius: 20px;
         transition: 0.1s;
     }
     .Navigation-auto div:not(:last-child){
-        margin-right: 30px;
+        margin-right: 20px;
     }
 }
