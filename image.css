@@ -145,6 +145,9 @@ div{
 #radio16:checked ~ .Navigation-auto .auto-butn16{
     background: #ff0000;
 }
+#radio17:checked ~ .Navigation-auto .auto-butn16{
+    background: #ff0000;
+}
 }
 /*Auto navigation End*/
 
@@ -220,6 +223,9 @@ div{
 }
 #radio16:checked ~ .first{
     margin-left: -300%;
+}
+#radio17:checked ~ .first{
+    margin-left: -320%;
 }
 
 }

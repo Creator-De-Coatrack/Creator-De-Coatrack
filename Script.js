@@ -79,6 +79,11 @@ document.getElementById("radio16").onclick = function(){
     slideTimer = setInterval(slideIt, 3000);
     changeImage(getElementById("image16"));
 }
+document.getElementById("radio17").onclick = function(){
+    clearInterval(slideTimer);
+    slideTimer = setInterval(slideIt, 3000);
+    changeImage(getElementById("image17"));
+}
 function slideIt() {
     if (document.getElementById('radio1').checked == true) {
             document.getElementById('radio2').click();
@@ -141,14 +146,22 @@ function slideIt() {
         changeImage(getElementById("image16"));
     }
     else if (document.getElementById('radio16').checked == true) {
+        document.getElementById('radio17').click();
+        changeImage(getElementById("image17"));
+    }
+    else if (document.getElementById('radio17').checked == true) {
         document.getElementById('radio1').click();
         changeImage(getElementById("image1"));
-    } 
+    }
         else {
           //do nothing
         }
 }
 function prev(){
+    if (document.getElementById('radio17').checked == true) {
+        document.getElementById('radio16').click();
+        changeImage(getElementById("image16"));
+    }
     if (document.getElementById('radio16').checked == true) {
         document.getElementById('radio15').click();
         changeImage(getElementById("image15"));
@@ -210,8 +223,8 @@ function prev(){
     changeImage(getElementById("image1"));
     } 
     else if (document.getElementById('radio1').checked == true) {
-    document.getElementById('radio16').click();
-    changeImage(getElementById("image16"));
+    document.getElementById('radio17').click();
+    changeImage(getElementById("image17"));
     } 
     else {
       //do nothing
@@ -279,9 +292,13 @@ else if (document.getElementById('radio15').checked == true) {
     changeImage(getElementById("image16"));
 }
 else if (document.getElementById('radio16').checked == true) {
+    document.getElementById('radio17').click();
+    changeImage(getElementById("image17"));
+}
+else if (document.getElementById('radio17').checked == true) {
     document.getElementById('radio1').click();
     changeImage(getElementById("image1"));
-} 
+}
         else {
           //do nothing
         }
