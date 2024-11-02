@@ -48,10 +48,10 @@ body{
 }
 /*Slideshow Frame Start*/
 .slider-frame{
-    width: 640px;
-    height: 360px;
+    width: 1024px;
+    height: 576px;
     margin-top: 100px;
-    margin-left: 400px;
+    margin-left: 650px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -68,12 +68,12 @@ div{
     display: none;
     }
     .slider-image{
-        width: 20%;
-        transition: 1s;
+    width: 20%;
+    transition: 1s;
     }
     .slider-image img{
-    width: 640px;
-    height: 360px;
+    width: 1024px;
+    height: 576px;
     }
 }
 /*Slideshow Images End*/
@@ -81,98 +81,298 @@ div{
 /*Auto navigation Start*/
 .Navigation-auto{
     position: absolute;
+    width: 1024px;
+    height: 180px;
+    margin-top: 600px;
+    margin-left: 0px;
     display: flex;
-    width: 400px;
-    margin-top: 365px;
-    margin-left: 120px;
     justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    overflow: hidden;
 }
-.Navigation-auto div{
-    border: 6px solid #171747;
-    padding: 8px;
-    border-radius: 20px;
-    transition: 0.1s;
+.Auto-btn-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 13px;
+    grid-area: 1 / 1;
+
+    img {
+    width: 80px;
+    height: 80px;
+        }
+    cursor: pointer;
 }
-.Navigation-auto div:not(:last-child){
-    margin-right: 13px;
+.Auto-btn-img-Dark{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 13px;
+    grid-area: 1 / 1;
+    z-index: 10;
+
+    img {
+    width: 80px;
+    height: 80px;
+        }
+    cursor: pointer;
 }
 div{
-#radio1:checked ~ .Navigation-auto .auto-butn1{
-    background: #ff0000;
-}
-#radio2:checked ~ .Navigation-auto .auto-butn2{
-    background: #ff0000;
-}
-#radio3:checked ~ .Navigation-auto .auto-butn3{
-    background: #ff0000;
-}
-#radio4:checked ~ .Navigation-auto .auto-butn4{
-    background: #ff0000;
-}
-#radio5:checked ~ .Navigation-auto .auto-butn5{
-    background: #ff0000;
-}
-#radio6:checked ~ .Navigation-auto .auto-butn6{
-    background: #ff0000;
-}
-#radio7:checked ~ .Navigation-auto .auto-butn7{
-    background: #ff0000;
-}
-#radio8:checked ~ .Navigation-auto .auto-butn8{
-    background: #ff0000;
-}
-#radio9:checked ~ .Navigation-auto .auto-butn9{
-    background: #ff0000;
-}
-#radio10:checked ~ .Navigation-auto .auto-butn10{
-    background: #ff0000;
-}
-#radio11:checked ~ .Navigation-auto .auto-butn11{
-    background: #ff0000;
-}
-#radio12:checked ~ .Navigation-auto .auto-butn12{
-    background: #ff0000;
-}
-#radio13:checked ~ .Navigation-auto .auto-butn13{
-    background: #ff0000;
-}
-#radio14:checked ~ .Navigation-auto .auto-butn14{
-    background: #ff0000;
-}
-#radio15:checked ~ .Navigation-auto .auto-butn15{
-    background: #ff0000;
-}
-#radio16:checked ~ .Navigation-auto .auto-butn16{
-    background: #ff0000;
-}
-#radio17:checked ~ .Navigation-auto .auto-butn17{
-    background: #ff0000;
-}
-}
+    #radio1:checked ~ .Navigation-auto .auto-btn1{
+        #Animation-Btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio2:checked ~ .Navigation-auto .auto-btn2{
+        #Music-Btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio3:checked ~ .Navigation-auto .auto-btn3{
+        #Live-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio4:checked ~ .Navigation-auto .auto-btn4{
+        #Clips-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio5:checked ~ .Navigation-auto .auto-btn5{
+        #WEBTOON-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio6:checked ~ .Navigation-auto .auto-btn6{
+        #Twitch-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio7:checked ~ .Navigation-auto .auto-btn7{
+        #Twitter-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio8:checked ~ .Navigation-auto .auto-btn8{
+        #Discord-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio9:checked ~ .Navigation-auto .auto-btn9{
+        #Patreon-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio10:checked ~ .Navigation-auto .auto-btn10{
+        #Ko-fi-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio11:checked ~ .Navigation-auto .auto-btn11{
+        #TikTok-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio12:checked ~ .Navigation-auto .auto-btn12{
+        #Instagram-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio13:checked ~ .Navigation-auto .auto-btn13{
+        #Reddit-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio14:checked ~ .Navigation-auto .auto-btn14{
+        #Pinterest-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio15:checked ~ .Navigation-auto .auto-btn15{
+        #Newgrounds-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio16:checked ~ .Navigation-auto .auto-btn16{
+        #Cara-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio17:checked ~ .Navigation-auto .auto-btn17{
+        #Facebook-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    }
 /*Auto navigation End*/
 
 /*manual navigation Start*/
-div{
-    .Navigation-Manual{
+.Navigation-Manual{
     position: absolute;
-    width: 400px;
-    margin-top: -154px;
-    margin-left: 120px;
+    width: 1024px;
+    height: 180px;
+    margin-top: 82px;
+    margin-left: 0px;
     display: flex;
     justify-content: center;
+    z-index: 100;
+    overflow: hidden;
+}
+.Manual-btn-img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 24px;
+        row-gap: 13px;
+
+        img {
+        width: 80px;
+        height: 80px;
+            }
+        cursor: pointer;
+}
+div{
+    .Manual-btn1{
+        opacity: 0%;
     }
-    .Manual-btn{
-    border: 6px solid #171747;
-    padding: 8px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.5s;
+    .Manual-btn2{
+        opacity: 0% ;
     }
-    .Manual-btn:not(:last-child){
-    margin-right: 13px;
+    .Manual-btn3{
+        opacity: 0% ;
     }
-    .Manual-btn:hover{
-        background:#ffffff ;
+    .Manual-btn4{
+        opacity: 0% ;
+    }
+    .Manual-btn5{
+        opacity: 0% ;
+    }
+    .Manual-btn6{
+        opacity: 0% ;
+    }
+    .Manual-btn7{
+        opacity: 0% ;
+    }
+    .Manual-btn8{
+        opacity: 0% ;
+    }
+    .Manual-btn9{
+        opacity: 0% ;
+    }
+    .Manual-btn10{
+        opacity: 0% ;
+    }
+    .Manual-btn11{
+        opacity: 0% ;
+    }
+    .Manual-btn12{
+        opacity: 0% ;
+    }
+    .Manual-btn13{
+        opacity: 0% ;
+    }
+    .Manual-btn14{
+        opacity: 0% ;
+    }
+    .Manual-btn15{
+        opacity: 0% ;
+    }
+    .Manual-btn16{
+        opacity: 0% ;
+    }
+    .Manual-btn17{
+        opacity: 0% ;
+    }
+}
+div{
+    .Manual-btn1:hover{
+        opacity: 100%;
+        transition: 0.5s;
+    }
+    .Manual-btn2:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
+    .Manual-btn3:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
+    .Manual-btn4:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
+    .Manual-btn5:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
+    .Manual-btn6:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
+    .Manual-btn7:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
+    .Manual-btn8:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
+    .Manual-btn9:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
+    .Manual-btn10:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
+    .Manual-btn11:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
+    .Manual-btn12:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
+    .Manual-btn13:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
+    .Manual-btn14:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
+    .Manual-btn15:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
+    .Manual-btn16:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
+    .Manual-btn17:hover{
+        opacity: 100% ;
+        transition: 0.5s;
     }
 }
 div{
@@ -235,7 +435,7 @@ p1{
     position: fixed;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     background-color: #171747;
     color: #ffffff;
     border-style: solid;
@@ -244,12 +444,12 @@ p1{
     border-radius: 10px;
     padding: 10px;
     align-self: center;
-    margin-top: 40px;
-    margin-left: 400px;
+    margin-top: 80px;
+    margin-left: -160px;
     font-style: italic;
     font-style: bold;
-    padding-left: 120px;
-    padding-right: 120px;
+    overflow: hidden;
+    width: 750px;
     overflow: hidden;
 }
 .intro{
@@ -265,11 +465,12 @@ p1{
     border-radius: 10px;
     padding: 10px;
     align-self: center;
-    margin-top: -150px;
-    margin-left: -110px;
+    margin-top: -260px;
+    margin-left: -160px;
     padding-left: 20px;
     padding-right: 20px;
     overflow: hidden;
+    width: 750px;
 }
 h2{
     font-size: 40px;
@@ -285,11 +486,11 @@ h3{
     overflow: hidden;
 }
 .Profile-Banner{
-    width: 495px;
+    width: 750px;
     position: absolute;
     position: fixed;
-    margin-top: -370px;
-    margin-left: -110px;
+    margin-top: -580px;
+    margin-left: -160px;
     border-style: solid;
     border-width: 6px;
     border-color: #ff9b00;
@@ -301,7 +502,7 @@ h3{
 .slider-btn{
     border: none;
     align-self: center;
-    height: 360px;
+    height: 576px;
     width: 100px;
     text-align: center;
     text-size-adjust: 100px 300px;
@@ -312,8 +513,8 @@ h3{
     color: #ffffff;
     cursor: pointer;
     margin: 10px auto;
-    margin-bottom: 150px;
-    margin-left: 540px;
+    margin-bottom: -65px;
+    margin-left: 924px;
     z-index: 500;
     opacity: 20%;
     transition: 0.5s;
@@ -331,6 +532,288 @@ h3{
 }
 .slider-btn:not(:last-child){
     margin-left: -0px;
+}
+@media (max-width: 1850px){
+    .slider-frame{
+        margin-left: 580px;
+    }
+    .Profile-Banner{
+        width: 680px;
+    }
+    .intro{
+        margin-top: -290px;
+        width: 680px;
+    }
+    p1{
+        margin-top: 50px;
+        width: 680px;
+    }
+}
+@media (max-width: 1800px){
+    .slider-frame{
+        width: 960px;
+        height: 540px;
+        margin-left: 550px;
+    }
+    .slider-images{
+        .slider-image img{
+            width: 960px;
+            height: 540px;
+        }
+    }
+    .slider-btn{
+        height: 540px;
+        width: 100px;
+        margin-bottom: -30px;
+        margin-left: 860px;
+    }
+    .Navigation-auto{
+        width: 960px;
+        margin-top: 550px;
+        .Auto-btn-img{
+            column-gap: 20px;
+            row-gap: 10px;
+            img {
+                width: 75px;
+                height: 75px;
+                    }
+        }
+        .Auto-btn-img-Dark{
+            column-gap: 20px;
+            row-gap: 10px;
+            img {
+                width: 75px;
+                height: 75px;
+                    }
+        }
+    }
+    .Navigation-Manual{
+        width: 960px;
+        margin-top: 32px;
+        .Manual-btn-img{
+            column-gap: 20px;
+            row-gap: 10px;
+            img {
+            width: 75px;
+            height: 75px;
+                }
+        }
+    }
+    .Profile-Banner{
+        width: 650px;
+        margin-top: -540px;
+    } 
+    .intro{
+        margin-top: -270px;
+        width: 650px;
+    }
+    p1{
+        margin-top: 70px;
+        width: 650px;
+    }
+}
+@media (max-width: 1700px){
+    .slider-frame{
+        margin-left: 500px;
+    }
+    .Profile-Banner{
+        width: 580px;
+        margin-top: -540px;
+    } 
+    .intro{
+        margin-top: -290px;
+        width: 580px;
+    }
+    p1{
+        margin-top: 40px;
+        width: 580px;
+    }
+}
+@media (max-width: 1650px){
+    .slider-frame{
+        width: 854px;
+        height: 480px;
+        margin-left: 550px;
+    }
+    .slider-images{
+        .slider-image img{
+            width: 854px;
+            height: 480px;
+        }
+    }
+    .slider-btn{
+        height: 480px;
+        width: 100px;
+        margin-bottom: 30px;
+        margin-left: 754px;
+    }
+    .Navigation-auto{
+        width: 854px;
+        margin-top: 500px;
+        .Auto-btn-img{
+            column-gap: 16px;
+            row-gap: 8px;
+            img {
+                width: 70px;
+                height: 70px;
+                    }
+        }
+        .Auto-btn-img-Dark{
+            column-gap: 16px;
+            row-gap: 8px;
+            img {
+                width: 70px;
+                height: 70px;
+                    }
+        }
+    }
+    .Navigation-Manual{
+        width: 854px;
+        margin-top: -18px;
+        .Manual-btn-img{
+            column-gap: 16px;
+            row-gap: 8px;
+            img {
+            width: 70px;
+            height: 70px;
+                }
+        }
+    }
+    .Profile-Banner{
+        width: 650px;
+        margin-left: -150px;
+        margin-top: -500px;
+    }
+    .intro{
+        margin-top: -240px;
+        margin-left: -150px;
+        width: 650px;
+    }
+    p1{
+        margin-top: 100px;
+        margin-left: -150px;
+        width: 650px;
+    }
+}
+@media (max-width: 1550px){
+    .slider-frame{
+        width: 640px;
+        height: 360px;
+        margin-left: 700px;
+        margin-top: 80px;
+    }
+    .slider-images{
+        .slider-image img{
+            width: 640px;
+            height: 360px;
+        }
+    }
+    .slider-btn{
+        height: 360px;
+        width: 100px;
+        margin-bottom: 150px;
+        margin-left: 540px;
+    }
+    .Navigation-auto{
+        width: 640px;
+        margin-top: 380px;
+        height: 130px;
+        .Auto-btn-img{
+            column-gap: 12px;
+            row-gap: 6px;
+            img {
+                width: 50px;
+                height: 50px;
+                    }
+        }
+        .Auto-btn-img-Dark{
+            column-gap: 12px;
+            row-gap: 6px;
+            img {
+                width: 50px;
+                height: 50px;
+                    }
+        }
+    }
+    .Navigation-Manual{
+        width: 640px;
+        margin-top: -138px;
+        height: 130px;
+        .Manual-btn-img{
+            column-gap: 12px;
+            row-gap: 6px;
+            img {
+            width: 50px;
+            height: 50px;
+                }
+        }
+    }
+    .Profile-Banner{
+        width: 800px;
+        margin-left: -130px;
+        margin-top: -360px;
+    }
+    .intro{
+        margin-top: -50px;
+        margin-left: -130px;
+        width: 800px;
+    }
+    p1{
+        margin-top: 150px;
+        margin-left: 700px;
+        width: 650px;
+    }
+}
+@media (max-width: 1450px){
+    .slider-frame{
+        margin-left: 600px;
+    }
+    .Profile-Banner{
+        width: 700px;
+        margin-top: -360px;
+    }
+    .intro{
+        margin-top: -80px;
+        width: 700px;
+    }
+    p1{
+        margin-left: 600px;
+        width: 650px;
+    }
+}
+@media (max-width: 1350px){
+    .slider-frame{
+        margin-left: 500px;
+    }
+    .Profile-Banner{
+        width: 600px;
+        margin-top: -360px;
+    }
+    .intro{
+        margin-top: -100px;
+        width: 600px;
+    }
+    p1{
+        margin-left: 500px;
+        width: 650px;
+    }
+}
+@media (max-width: 1250px){
+    .slider-frame{
+        margin-left: 400px;
+    }
+    .Profile-Banner{
+        width: 500px;
+        margin-top: -360px;
+    }
+    .intro{
+        margin-top: -140px;
+        width: 500px;
+    }
+    p1{
+        margin-left: 400px;
+        width: 650px;
+    }
 }
 @media (max-width: 1170px) {
     .slider-frame{
@@ -608,748 +1091,127 @@ h3{
     h3{
         font-size: 0px;
     }
+    p1{
+        font-size: 0px;
+        background-color: transparent;
+        color: #ffffff;
+        border-style: none;
+    }
     .Profile-Banner{
         width: 0px;
         background-color: transparent;
         color: #ffffff;
         border-style: none;  
     }
-    div{
-        .Navigation-Manual{
-        position: absolute;
-        width: 400px;
-        margin-top: -518px;
-        margin-left: 120px;
-        display: flex;
-        align-items: vertical;
-        justify-content: center;
-        }
+    .Navigation-Manual{
+        margin-top: 0pxpx;
+        margin-left: 0px;
+        width: 0px;
+        overflow: hidden;
     }
     .Navigation-auto{
-        position: absolute;
-        display: flex;
-        align-items: vertical;
-        width: 400px;
         margin-top: 0px;
-        margin-left: 120px;
-        justify-content: center;
-    }
-    .slider-frame{
-        margin-left: 150px;
-    }
-}
-@media (max-height: 512px){
-    .slider-frame{
-        margin-top: 120px;
-    }
-}
-@media (max-height: 496px){
-    .intro{
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;
-    }
-    h2{
-        font-size: 0px;
-    }
-    p2{
-        font-size: 0px;
-        font-style: italic;
-    }
-    h3{
-        font-size: 0px;
-    }
-    .Profile-Banner{
+        margin-left: 0px;
         width: 0px;
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;  
+        overflow: hidden;
     }
-    div{
-        .Navigation-Manual{
-        position: absolute;
-        width: 400px;
-        margin-top: -498px;
-        margin-left: 120px;
-        display: flex;
-        align-items: vertical;
-        justify-content: center;
+    .Auto-btn-img{
+        img {
+        width: 0px;
+        height: 0px;
         }
     }
-    .Navigation-auto{
-        position: absolute;
-        display: flex;
-        align-items: vertical;
-        width: 400px;
-        margin-top: 20px;
-        margin-left: 120px;
-        justify-content: center;
-    }
-    .slider-frame{
-        margin-left: 150px;
-    }
-}
-@media (max-height: 484px){
-    .slider-frame{
-        margin-top: 100px;
-    }
-    .intro{
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;
-    }
-    h2{
-        font-size: 0px;
-    }
-    p2{
-        font-size: 0px;
-        font-style: italic;
-    }
-    h3{
-        font-size: 0px;
-    }
-    .Profile-Banner{
+    .Auto-btn-img-Dark{
+        img {
         width: 0px;
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;  
+        height: 0px;
+            }
     }
-    div{
-        .Navigation-Manual{
-        position: absolute;
-        width: 400px;
-        margin-top: -478px;
-        margin-left: 120px;
-        display: flex;
-        align-items: vertical;
-        justify-content: center;
-        }
-    }
-    .Navigation-auto{
-        position: absolute;
-        display: flex;
-        align-items: vertical;
-        width: 400px;
-        margin-top: 40px;
-        margin-left: 120px;
-        justify-content: center;
-    }
-    .slider-frame{
-        margin-left: 150px;
-    }
-}
-@media (max-height: 462px){
-    .slider-frame{
-        margin-top: 100px;
-    }
-}
-@media (max-height: 444px){
-    .slider-frame{
-        margin-top: 60px;
-    }
-    .intro{
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;
-    }
-    h2{
-        font-size: 0px;
-    }
-    p2{
-        font-size: 0px;
-        font-style: italic;
-    }
-    h3{
-        font-size: 0px;
-    }
-    .Profile-Banner{
+    .Manual-btn-img{
+        img {
         width: 0px;
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;  
-    }
-    div{
-        .Navigation-Manual{
-        position: absolute;
-        width: 400px;
-        margin-top: -438px;
-        margin-left: 120px;
-        display: flex;
-        align-items: vertical;
-        justify-content: center;
-        }
-    }
-    .Navigation-auto{
-        position: absolute;
-        display: flex;
-        align-items: vertical;
-        width: 400px;
-        margin-top: 80px;
-        margin-left: 120px;
-        justify-content: center;
-    }
-    .slider-frame{
-        margin-left: 150px;
-    }
+        height: 0px;
+            }
 }
-@media (max-height: 422px){
     .slider-frame{
-        margin-top: 40px;
-    }
-}
-@media (max-height: 404px){
-    .slider-frame{
-        margin-top: 20px;
-    }
-    .intro{
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;
-    }
-    h2{
-        font-size: 0px;
-    }
-    p2{
-        font-size: 0px;
-        font-style: italic;
-    }
-    h3{
-        font-size: 0px;
-    }
-    .Profile-Banner{
-        width: 0px;
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;  
-    }
-    div{
-        .Navigation-Manual{
-        position: absolute;
-        width: 400px;
-        margin-top: -388px;
-        margin-left: 120px;
-        display: flex;
-        align-items: vertical;
-        justify-content: center;
-        }
-    }
-    .Navigation-auto{
-        position: absolute;
-        display: flex;
-        align-items: vertical;
-        width: 400px;
-        margin-top: 130px;
-        margin-left: 120px;
-        justify-content: center;
-    }
-    .slider-frame{
-        margin-left: 150px;
-    }
-}
-@media (max-height: 381px){
-    .slider-frame{
-        margin-top: 0px;
-    }
-}
-@media (max-height: 362px){
-    .slider-frame{
-        margin-top: -20px;
-    }
-    .intro{
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;
-    }
-    h2{
-        font-size: 0px;
-    }
-    p2{
-        font-size: 0px;
-        font-style: italic;
-    }
-    h3{
-        font-size: 0px;
-    }
-    .Profile-Banner{
-        width: 0px;
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;  
-    }
-    div{
-        .Navigation-Manual{
-        position: absolute;
-        width: 400px;
-        margin-top: -368px;
-        margin-left: 120px;
-        display: flex;
-        align-items: vertical;
-        justify-content: center;
-        }
-    }
-    .Navigation-auto{
-        position: absolute;
-        display: flex;
-        align-items: vertical;
-        width: 400px;
+        margin-left: 100px;
         margin-top: 150px;
-        margin-left: 120px;
-        justify-content: center;
-    }
-    .slider-frame{
-        margin-left: 150px;
     }
 }
-@media (max-height: 341px){
+@media (max-height: 450px){
     .slider-frame{
-        margin-top: -40px;
-    }
-    .intro{
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;
-    }
-    h2{
-        font-size: 0px;
-    }
-    p2{
-        font-size: 0px;
-        font-style: italic;
-    }
-    h3{
-        font-size: 0px;
-    }
-    .Profile-Banner{
-        width: 0px;
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;  
-    }
-    div{
-        .Navigation-Manual{
-        position: absolute;
-        width: 400px;
-        margin-top: -338px;
-        margin-left: 120px;
-        display: flex;
-        align-items: vertical;
-        justify-content: center;
-        }
-    }
-    .Navigation-auto{
-        position: absolute;
-        display: flex;
-        align-items: vertical;
-        width: 400px;
-        margin-top: 180px;
-        margin-left: 120px;
-        justify-content: center;
-    }
-    .slider-frame{
-        margin-left: 150px;
-    }
-}
-@media (max-height: 321px){
-    .slider-frame{
-        margin-top: -60px;
+        margin-top: 50px;
     }
 }
 @media (max-height: 300px){
-    .slider-frame{
-        margin-top: -80px;
-    }
-    .intro{
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;
-    }
-    h2{
-        font-size: 0px;
-    }
-    p2{
-        font-size: 0px;
-        font-style: italic;
-    }
-    h3{
-        font-size: 0px;
-    }
-    .Profile-Banner{
-        width: 0px;
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;  
-    }
-    div{
-        .Navigation-Manual{
-        position: absolute;
-        width: 400px;
-        margin-top: -308px;
-        margin-left: 120px;
-        display: flex;
-        align-items: vertical;
-        justify-content: center;
+        .slider-frame{
+            margin-top: -50px;
         }
     }
-    .Navigation-auto{
-        position: absolute;
-        display: flex;
-        align-items: vertical;
-        width: 400px;
-        margin-top: 210px;
-        margin-left: 120px;
-        justify-content: center;
-    }
-    .slider-frame{
-        margin-left: 150px;
-    }
-}
-@media (max-height: 282px){
-    .slider-frame{
-        margin-top: -100px;
-    }
-    .intro{
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;
-    }
-    h2{
-        font-size: 0px;
-    }
-    p2{
-        font-size: 0px;
-        font-style: italic;
-    }
-    h3{
-        font-size: 0px;
-    }
-    .Profile-Banner{
-        width: 0px;
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;  
-    }
-    div{
-        .Navigation-Manual{
-        position: absolute;
-        width: 400px;
-        margin-top: -288px;
-        margin-left: 120px;
-        display: flex;
-        align-items: vertical;
-        justify-content: center;
+@media (max-height: 200px){
+        .slider-frame{
+            margin-top: -150px;
         }
     }
-    .Navigation-auto{
-        position: absolute;
-        display: flex;
-        align-items: vertical;
-        width: 400px;
-        margin-top: 230px;
-        margin-left: 120px;
-        justify-content: center;
-    }
-    .slider-frame{
-        margin-left: 150px;
-    }
-}
-@media (max-height: 262px){
-    .slider-frame{
-        margin-top: -120px;
-    }
-    .intro{
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;
-    }
-    h2{
-        font-size: 0px;
-    }
-    p2{
-        font-size: 0px;
-        font-style: italic;
-    }
-    h3{
-        font-size: 0px;
-    }
-    .Profile-Banner{
-        width: 0px;
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;  
-    }
-    div{
-        .Navigation-Manual{
-        position: absolute;
-        width: 400px;
-        margin-top: -268px;
-        margin-left: 120px;
-        display: flex;
-        align-items: vertical;
-        justify-content: center;
-        }
-    }
-    .Navigation-auto{
-        position: absolute;
-        display: flex;
-        align-items: vertical;
-        width: 400px;
-        margin-top: 250px;
-        margin-left: 120px;
-        justify-content: center;
-    }
-    .slider-frame{
-        margin-left: 150px;
-    }
-}
-@media (max-height: 242px){
-    .slider-frame{
-        margin-top: -140px;
-    }
-    .intro{
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;
-    }
-    h2{
-        font-size: 0px;
-    }
-    p2{
-        font-size: 0px;
-        font-style: italic;
-    }
-    h3{
-        font-size: 0px;
-    }
-    .Profile-Banner{
-        width: 0px;
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;  
-    }
-    div{
-        .Navigation-Manual{
-        position: absolute;
-        width: 400px;
-        margin-top: -258px;
-        margin-left: 120px;
-        display: flex;
-        align-items: vertical;
-        justify-content: center;
-        }
-    }
-    .Navigation-auto{
-        position: absolute;
-        display: flex;
-        align-items: vertical;
-        width: 400px;
-        margin-top: 260px;
-        margin-left: 120px;
-        justify-content: center;
-    }
-    .slider-frame{
-        margin-left: 150px;
-    }
-}
-@media (max-height: 222px){
-    .slider-frame{
-        margin-top: -160px;
-    }
-    .intro{
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;
-    }
-    h2{
-        font-size: 0px;
-    }
-    p2{
-        font-size: 0px;
-        font-style: italic;
-    }
-    h3{
-        font-size: 0px;
-    }
-    .Profile-Banner{
-        width: 0px;
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;  
-    }
-    div{
-        .Navigation-Manual{
-        position: absolute;
-        width: 400px;
-        margin-top: -238px;
-        margin-left: 120px;
-        display: flex;
-        align-items: vertical;
-        justify-content: center;
-        }
-    }
-    .Navigation-auto{
-        position: absolute;
-        display: flex;
-        align-items: vertical;
-        width: 400px;
-        margin-top: 280px;
-        margin-left: 120px;
-        justify-content: center;
-    }
-    .slider-frame{
-        margin-left: 150px;
-    }
-}
-@media (max-height: 202px){
-    .slider-frame{
-        margin-top: -180px;
-    }
-    .intro{
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;
-    }
-    h2{
-        font-size: 0px;
-    }
-    p2{
-        font-size: 0px;
-        font-style: italic;
-    }
-    h3{
-        font-size: 0px;
-    }
-    .Profile-Banner{
-        width: 0px;
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;  
-    }
-    div{
-        .Navigation-Manual{
-        position: absolute;
-        width: 400px;
-        margin-top: -218px;
-        margin-left: 120px;
-        display: flex;
-        align-items: vertical;
-        justify-content: center;
-        }
-    }
-    .Navigation-auto{
-        position: absolute;
-        display: flex;
-        align-items: vertical;
-        width: 400px;
-        margin-top: 300px;
-        margin-left: 120px;
-        justify-content: center;
-    }
-    .slider-frame{
-        margin-left: 150px;
-    }
-}
-@media (max-height: 182px){
-    .slider-frame{
-        margin-top: -200px;
-    }
-    .intro{
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;
-    }
-    h2{
-        font-size: 0px;
-    }
-    p2{
-        font-size: 0px;
-        font-style: italic;
-    }
-    h3{
-        font-size: 0px;
-    }
-    .Profile-Banner{
-        width: 0px;
-        background-color: transparent;
-        color: #ffffff;
-        border-style: none;  
-    }
-    div{
-        .Navigation-Manual{
-        position: absolute;
-        width: 400px;
-        margin-top: -188px;
-        margin-left: 120px;
-        display: flex;
-        align-items: vertical;
-        justify-content: center;
-        }
-    }
-    .Navigation-auto{
-        position: absolute;
-        display: flex;
-        align-items: vertical;
-        width: 400px;
-        margin-top: 330px;
-        margin-left: 120px;
-        justify-content: center;
-    }
-    .slider-frame{
-        margin-left: 150px;
-    }
-}
-@media (max-height: 162px){
-    .slider-frame{
-        margin-top: -220px;
-    }
-}
 }
 @media (orientation: portrait) {
-    div{
-        .slider-images{
-        width: 500%;
-        height: 500px;
-        display: flex;
-        }
-        .slider-images input{
-        display: none;
-        }
-        .slider-image{
-            width: 20%;
-            transition: 1s;
-        }
+    .slider-frame{
+        width: 854px;
+        height: 480px;
+        margin-left: -25px;
+        margin-top: 150px;
+    }
+    .slider-images{
         .slider-image img{
-        width: 640px;
-        height: 360px;
+            width: 854px;
+            height: 480px;
         }
     }
-    .slider-frame{
-        width: 640px;
-        height: 360px;
-        margin-top: 150px;
-        margin-left: 75px;
-        border-radius: 10px;
-        overflow: hidden;
+    .slider-btn{
+        height: 480px;
+        width: 100px;
+        margin-bottom: 30px;
+        margin-left: 754px;
+    }
+    .Navigation-auto{
+        width: 854px;
+        margin-top: 500px;
+        height: 200px;
+        .Auto-btn-img{
+            column-gap: 16px;
+            row-gap: 8px;
+            img {
+                width: 70px;
+                height: 70px;
+                    }
+        }
+        .Auto-btn-img-Dark{
+            column-gap: 16px;
+            row-gap: 8px;
+            img {
+                width: 70px;
+                height: 70px;
+                    }
+        }
+    }
+    .Navigation-Manual{
+        width: 854px;
+        margin-top: -18px;
+        height: 200px;
+        .Manual-btn-img{
+            column-gap: 16px;
+            row-gap: 8px;
+            img {
+            width: 70px;
+            height: 70px;
+                }
+        }
     }
     p1{
-        position: absolute;
-        position: fixed;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 50px;
-        background-color: #171747;
-        color: #ffffff;
-        border-style: solid;
-        border-width: 6px;
-        border-color: #ff9b00;
-        border-radius: 10px;
-        padding: 10px;
-        align-self: center;
-        margin-top: 50px;
-        margin-left: 50px;
-        font-style: italic;
-        font-style: bold;
-        padding-left: 120px;
-        padding-right: 120px;
+        margin-top: 220px;
+        margin-left: -25px;
+        width: 854px;
+        height: 180px
     }
     .intro{
         position: absolute;
@@ -1365,10 +1227,11 @@ h3{
         border-radius: 10px;
         padding: 10px;
         align-self: center;
-        margin-top: 570px;
-        margin-left: 0px;
-        padding-left: 20px;
-        padding-right: 20px;
+        margin-top: 800px;
+        margin-left: -25px;
+        width: 854px;
+        height: 650px;
+
     }
     h2{
         font-size: 60px;
@@ -1381,56 +1244,16 @@ h3{
         font-size: 50px;
     }
     .Profile-Banner{
-        width: 800px;
+        width: 854px;
         position: absolute;
         position: fixed;
-        margin-top: 220px;
-        margin-left: 0px;
+        margin-top: 420px;
+        margin-left: -25px;
         border-style: solid;
         border-width: 6px;
         border-color: #ff9b00;
         border-radius: 10px;
         border-image-repeat: no-repeat;
         z-index: 1;
-    }
-    div{
-        .Navigation-Manual{
-        position: absolute;
-        width: 400px;
-        margin-top: -154px;
-        margin-left: 120px;
-        display: flex;
-        justify-content: center;
-        }
-        .Manual-btn{
-        border: 6px solid #171747;
-        padding: 14px;
-        border-radius: 20px;
-        cursor: pointer;
-        transition: 0.5s;
-        }
-        .Manual-btn:not(:last-child){
-        margin-right: 20px;
-        }
-        .Manual-btn:hover{
-            background:#ffffff ;
-        }
-    }
-    .Navigation-auto{
-        position: absolute;
-        display: flex;
-        width: 400px;
-        margin-top: 365px;
-        margin-left: 120px;
-        justify-content: center;
-    }
-    .Navigation-auto div{
-        border: 6px solid #171747;
-        padding: 14px;
-        border-radius: 20px;
-        transition: 0.1s;
-    }
-    .Navigation-auto div:not(:last-child){
-        margin-right: 20px;
     }
 }
