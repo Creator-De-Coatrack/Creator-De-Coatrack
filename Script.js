@@ -303,3 +303,6 @@ else if (document.getElementById('radio17').checked == true) {
           //do nothing
         }
 }
+document.querySelector(".popupclose").addEventListener("click", function(){
+    document.querySelector(".modal").style.display = "none";
+});
