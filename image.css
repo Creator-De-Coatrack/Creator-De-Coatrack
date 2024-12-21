@@ -28,80 +28,50 @@ a:link{
     top: 0;
     left: 0;
     width: 100%;
-    height: 90px;
+    height: 100px;
     background: #171747;
 }
 .tab{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    align-items: center;
     text-align: center;
-    overflow: hidden;
-    height: 90px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 100px;
+}
+.tab::-webkit-scrollbar {
+    height: 20px;
+}
+.tab::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    opacity: 100%;
+    border-radius: 10px;
+    border: solid 4px;
+    border-color: #ff9b00;
+    min-width: 50px;
+    max-width: 100px;
+}
+.tab::-webkit-scrollbar-track{
+    background-color: #000;
+    border-radius: 10px;
+    margin-inline: 50px;
+    border: solid 4px;
+    border-color: #ff9b00;
+}
+.tab::-webkit-scrollbar-thumb:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: red;
 }
 .website{
     font-style: bold;
-    #website10{
-        height: 90px;
-        width: 120px;
-        font-size: 60px;
-    }
-    #website1{
+    border-inline-start: solid 3px #ff9b00;
     height: 90px;
-    width: 120px;
-    font-size: 40px;
-    font-style: italic;
-    }
-    #website2{
-    height: 90px;
-    width: 120px;
-    font-size: 40px;
-    font-style: italic;
-    background-color: #ffffff;
-    }
-    #website3{
-    height: 90px;
-    width: 150px;
-    font-size: 40px;
-    font-style: italic;
-    }
-    #website4{
-    height: 90px;
-    width: 180px;
-    font-size: 30px;
-    font-style: italic;
-    }
-    #website5{
-    height: 90px;
-    width: 220px;
-    font-size: 35px;
-    font-style: italic;
-    }
-    #website6{
-    height: 90px;
-    width: 150px;
-    font-size: 40px;
-    font-style: italic;
-    }
-    #website7{
-    height: 90px;
-    width: 150px;
-    font-size: 40px;
-    font-style: italic;
-    }
-    #website8{
-    height: 90px;
-    width: 150px;
-    font-size: 40px;
-    font-style: italic;
-    }
-    #website9{
-    height: 90px;
-    width: 150px;
-    font-size: 40px;
-    font-style: italic;
-    }
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-block: auto;
+    color: #fff;
 }
 .website:hover{
     cursor: pointer;
@@ -110,131 +80,17 @@ a:link{
     transition: 0.3s;
     color: #000000;
 }
-#Sidebar-Button{
-    color: #ffffff;    
-    font-size: 60px;
-    font-style: bold;
-    width: 120px;
-    height: 90px;
-    margin: auto;
-}
-#Sidebar-Button:hover{
-    color: #000000;
-}
 #Live-Tab{
-    color: #ff0000;    
-    font-size: 40px;
-    font-style: bold;
-    font-style: italic;
-    width: 120px;
-    height: 90px;
-    margin: auto;
-    padding: 20px 0 20px;
+    color: #f00;
 }
 #Live-Tab:hover{
+    opacity: 100%;
     color: #000000;
-}
-#Home-Tab{
-    color: #000000;    
-    font-size: 40px;
-    font-style: bold;
-    font-style: italic;
-    width: 120px;
-    height: 90px;
-    margin: auto;
-    padding: 20px 0 20px;    
-}
-#Home-Tab:hover{
-    color: #000000;
-}
-#Donate-Tab{
-    color: #ffffff;    
-    font-size: 40px;
-    font-style: bold;
-    font-style: italic;
-    width: 120px;
-    height: 90px;
-    margin-left: 7px;
-    padding: 20px 0 20px;
-}
-#Donate-Tab:hover{
-    color: #000000;
+    transition: 0.3s;
 }
 #Casts-Tab{
-    color: #ffffff;    
     font-size: 30px;
-    font-style: bold;
-    font-style: italic;
-    width: 180px;
-    height: 90px;
-    text-align: center;
-    margin: auto;
-    padding: 10px 0 10px;
 }
-#Casts-Tab:hover{
-    color: #000000;
-}
-#Animation-Tab{
-    color: #ffffff;    
-    font-size: 35px;
-    font-style: bold;
-    font-style: italic;
-    height: 90px;
-    margin: auto;
-    padding: 20px 0 20px;
-}
-#Animation-Tab:hover{
-    color: #000000;
-}
-#Comics-Tab{
-    color: #ffffff;    
-    font-size: 40px;
-    font-style: bold;
-    font-style: italic;
-    height: 90px;
-    margin: auto;
-    padding: 20px 0 20px;
-}
-#Comics-Tab:hover{
-    color: #000000;
-}
-#Merch-Tab{
-    color: #ffffff;    
-    font-size: 40px;
-    font-style: bold;
-    font-style: italic;
-    height: 90px;
-    margin: auto;
-    padding: 20px 0 20px;
-}
-#Merch-Tab:hover{
-    color: #000000;
-}
-#About-Tab{
-    color: #ffffff;    
-    font-size: 40px;
-    font-style: bold;
-    font-style: italic;
-    height: 90px;
-    margin: auto;
-    padding: 20px 0 20px;
-}
-#About-Tab:hover{
-    color: #000000;
-}
-#Login-Tab{
-    color: #ffffff;    
-    font-size: 40px;
-    font-style: bold;
-    font-style: italic;
-    height: 90px;
-    margin: auto;
-    padding: 20px 0 20px;
-}
-#Login-Tab:hover{
-    color: #000000;
-}
-
 /*Header End*/
 
 /*Sidebar Start*/
@@ -247,130 +103,83 @@ a:link{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     z-index: 100000;
     border: #ff9b00;
     border-right-width: 10px;
     border-style: solid;
     transition: all .5s ease;
-    #website11{
-        width:100%;
-        height: 90px;
-        font-size: 20px;
-        margin: auto;
-        text-align: center;
-        position: relative;
-        padding: 20px 0 20px;
-    }
-    #website12{
-        width:100%;
-        height: 90px;
-        font-size: 20px;
-        margin: auto;
-        text-align: center;
-        position: relative;
-        padding: 20px 0 20px;
-    }
-    #website13{
-        width:100%;
-        height: 90px;
-        font-size: 20px;
-        margin: auto;
-        text-align: center;
-        position: relative;
-        padding: 20px 0 20px;
-    }
-    #website14{
-        width:100%;
-        height: 90px;
-        font-size: 20px;
-        margin: auto;
-        text-align: center;
-        position: relative;
-        padding: 20px 0 20px;
-    }
-    #website15{
-        width:100%;
-        height: 90px;
-        font-size: 20px;
-        margin: auto;
-        text-align: center;
-        position: relative;
-        padding: 20px 0 20px;
-    }
-    #website16{
-        width:100%;
-        height: 90px;
-        font-size: 20px;
-        margin: auto;
-        text-align: center;
-        position: relative;
-        padding: 20px 0 20px;
-    }
 }
-#Side-Login-Tab{
-    height: 90px;
+.Sidebar::-webkit-scrollbar {
+    width: 20px;
+}
+.Sidebar::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    opacity: 100%;
+    border-radius: 10px;
+    border: solid 4px;
+    border-color: #ff9b00;
+    min-height: 50px;
+    max-height: 100px;
+}
+.Sidebar::-webkit-scrollbar-track{
+    background-color: #000;
+    border-radius: 10px;
+    margin-block: 50px;
+    border: solid 4px;
+    border-color: #ff9b00;
+}
+.Sidebar::-webkit-scrollbar-thumb:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: red;
+}
+.side-website{
+    width:100%;
+    height: auto;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    padding: 20px 0 20px;
     color: #ffffff;
+    border-block-start: solid 5px #ff9b00;
 }
-#Side-Login-Tab:hover{
+.side-website:hover{
     opacity: 100%;
     color: #000000;
     transition: 0.3s;
 }
-#Side-Merch-Tab{
-    height: 90px;
-    color: #ffffff;
+#Side-Live-Tab{
+    color: #f00;
 }
-#Side-Merch-Tab:hover{
+#Side-Live-Tab:hover{
     opacity: 100%;
     color: #000000;
     transition: 0.3s;
 }
-#Side-Animation-Tab{
-    height: 90px;
-    color: #ffffff;
-}
-#Side-Animation-Tab:hover{
-    opacity: 100%;
-    color: #000000;
-    transition: 0.3s;
-}
-#Side-Comics-Tab{
-    height: 90px;
-    color: #ffffff;
-}
-#Side-Comics-Tab:hover{
-    opacity: 100%;
-    color: #000000;
-    transition: 0.3s;
-}
-#Side-Donate-Tab{
-    height: 90px;
-    color: #ffffff;
-}
-#Side-Donate-Tab:hover{
-    opacity: 100%;
-    color: #000000;
-    transition: 0.3s;
-}
-#Side-About-Tab{
-    height: 90px;
-    color: #ffffff;
-}
-#Side-About-Tab:hover{
-    opacity: 100%;
-    color: #000000;
-    transition: 0.3s;
+#Side-Casts-Tab{
+    font-size: 35px;
+    margin-top: -20px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #Sidebar-Icon{
-    width: 200px;
-    height: 200px;
-    align-self: center;
-    margin-left: 40px;
-    padding-bottom: 20px;
+    width: 247px;
+    height: 246px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 20px;
+    padding-block: 20px;
 }
 p0{
-    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
     text-align: center;
     font-weight: bold;
     color:#ff9b00;
