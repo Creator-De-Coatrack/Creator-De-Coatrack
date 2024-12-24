@@ -7,40 +7,54 @@
     <link rel="stylesheet" href="image.css">
 </head>
 
-<body>  
+<body>
+    <div class="background-image">
+        <img src="Website-Background.png" alt="">
+    </div>  
     <input type="checkbox" id="Sidebar-Check">
-            <label for="Sidebar-Check">
+        <label for="Sidebar-Check">
                 <div class="Sidebar-Check" id="Sidebar-Open"></div>
                 <div class="Sidebar-Check" id="Sidebar-Close">More Content Here!</div>
-            </label>
+        </label>
     </input>
     <div id="popup" class="modal">
             <div class="content">
-                <h4>
-                    Under Construction!
-                </h4>
-                <p>This Page Has Not Been Coded Yet! This Page Will Be Accessable In The Future. Stay Tuned :)</p>
-                <a href="index.html"><button onclick="document()" class="popupclose">I Understand</button></a>
+                <div class="popuptitle" id="popuptitle">
+                    <h4>
+                        Under Construction!
+                    </h4>
+                </div>
+                <div class="popuptext" id="popuptext">
+                    <p>This Page Has Not Been Coded Yet! This Page Will Be Accessable In The Future. Stay Tuned :)</p>
+                </div>
+                <div class="popupclick" id="popupclick">
+                    <a href="index.html" class="popupclose">
+                        I Understand
+                        <button onclick="document()" class="popupclose">
+                            I Understand
+                        </button>
+                    </a>
+                </div>
             </div>
     </div>
     <div class="Sidebar">
-        <header> <img src="Icon 1.png" alt="" id="Sidebar-Icon"> <br> <p0>Creator De Coatrack</p0></header>
-        <div class="website"><a href="#popup"><div class="side-website" id="website11"><h1 id="Side-Login-Tab">Login</h1></div></a></div>
-        <div class="website"><a href="#popup"><div class="side-website" id="website12"><h1 id="Side-About-Tab">About</h1></div></a></div>
-        <div class="website"><a href="#popup"><div class="side-website" id="website13"><h1 id="Side-Merch-Tab">Merch</h1></div></a></div>
-        <div class="website"><a href="#popup"><div class="side-website" id="website14"><h1 id="Side-Comics-Tab">Comics</h1></div></a></div>    
-        <div class="website"><a href="#popup"><div class="side-website" id="website15"><h1 id="Side-Animation-Tab">Animations</h1></div></a></div>
-        <div class="website"><a href="#popup"><div class="side-website" id="website16"><h1 id="Side-Casts-Tab">Casts & Characters</h1></div></a></div>      
-        <div class="website"><a href="#popup"><div class="side-website" id="website17"><h1 id="Side-Donate-Tab">Donate</h1></div></a></div>
-        <div class="website"><a href="index.html"><div class="side-website" id="website18"><h1 id="Side-Home-Tab">Home</h1></div></a></div> 
-        <div class="website"><a href="#popup"><div class="side-website" id="website19"><h1 id="Side-Live-Tab">●Live</h1></div></a></div>
+        <div class="profile-picture" id="profile-picture"><header> <img src="Icon 1.png" alt="" id="Sidebar-Icon"> <br> <p0>Creator De Coatrack</p0></header></div>
+        <div class="website" id="website11"><a href="#popup"><div class="side-website"><h1 id="Side-Login-Tab">Login</h1></div></a></div>
+        <div class="website" id="website12"><a href="#popup"><div class="side-website"><h1 id="Side-About-Tab">About</h1></div></a></div>
+        <div class="website" id="website13"><a href="#popup"><div class="side-website"><h1 id="Side-Merch-Tab">Merch</h1></div></a></div>
+        <div class="website" id="website14"><a href="#popup"><div class="side-website"><h1 id="Side-Comics-Tab">Comics</h1></div></a></div>    
+        <div class="website" id="website15"><a href="#popup"><div class="side-website"><h1 id="Side-Animation-Tab">Animations</h1></div></a></div>
+        <div class="website" id="website16"><a href="#popup"><div class="side-website"><h1 id="Side-Wiki-Tab">Wiki</h1></div></a></div>      
+        <div class="website" id="website17"><a href="#popup"><div class="side-website"><h1 id="Side-Donate-Tab">Donate</h1></div></a></div>
+        <div class="website" id="website18"><a href="index.html"><div class="side-website" id="side-website18"><h1 id="Side-Home-Tab">Home</h1></div></a></div> 
+        <div class="website" id="website19"><a href="#popup"><div class="side-website"><h1 id="Side-Live-Tab">●Live</h1></div></a></div>
     </div>
     <header class="header"> <!-- Header starts-->
         <div class="tab">
             <div class="website"><a href="#popup"><div class="website" id="website1"><h1 id="Live-Tab">●Live</h1></div></a></div>
             <div class="website"><a href="index.html"><div class="website" id="website2"><h1 id="Home-Tab">Home</h1></div></a></div>       
             <div class="website"><a href="#popup"><div class="website" id="website3"><h1 id="Donate-Tab">Donate</h1></div></a></div>
-            <div class="website"><a href="#popup"><div class="website" id="website4"><h1 id="Casts-Tab">Casts & Characters</h1></div></a></div>
+            <div class="website"><a href="#popup"><div class="website" id="website4"><h1 id="Wiki-Tab">Wiki</h1></div></a></div>
             <div class="website"><a href="#popup"><div class="website" id="website5"><h1 id="Animation-Tab">Animations</h1></div></a></div>
             <div class="website"><a href="#popup"><div class="website" id="website6"><h1 id="Comics-Tab">Comics</h1></div></a></div>
             <div class="website"><a href="#popup"><div class="website" id="website7"><h1 id="Merch-Tab">Merch</h1></div></a></div>
@@ -49,26 +63,28 @@
         </div>
     </header> <!-- Header ends-->
     <div class="background"> <!-- Body starts -->
-        <div class="slider-frame"><!-- Slideshow Starts-->
-            <div class="slider-images">
-                <!-- Radio Button Starts-->
-                <input type="radio" name="radio-btn" id="radio1" checked>
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <input type="radio" name="radio-btn" id="radio5">
-                <input type="radio" name="radio-btn" id="radio6">
-                <input type="radio" name="radio-btn" id="radio7">
-                <input type="radio" name="radio-btn" id="radio8">
-                <input type="radio" name="radio-btn" id="radio9">
-                <input type="radio" name="radio-btn" id="radio10">
-                <input type="radio" name="radio-btn" id="radio11">
-                <input type="radio" name="radio-btn" id="radio12">
-                <input type="radio" name="radio-btn" id="radio13">
-                <input type="radio" name="radio-btn" id="radio14">
-                <input type="radio" name="radio-btn" id="radio15">
-                <input type="radio" name="radio-btn" id="radio16">
-                <input type="radio" name="radio-btn" id="radio17">
+        <div class="Grid" id="Grid1">
+            <div class="slider-grid">
+                <div class="slider-frame"><!-- Slideshow Starts-->
+                    <div class="slider-images">
+                    <!-- Radio Button Starts-->
+                <input type="radio" name="radio-btn" value="radio1" id="radio1" checked>
+                <input type="radio" name="radio-btn" value="radio2" id="radio2">
+                <input type="radio" name="radio-btn" value="radio3" id="radio3">
+                <input type="radio" name="radio-btn" value="radio4" id="radio4">
+                <input type="radio" name="radio-btn" value="radio5" id="radio5">
+                <input type="radio" name="radio-btn" value="radio6" id="radio6">
+                <input type="radio" name="radio-btn" value="radio7" id="radio7">
+                <input type="radio" name="radio-btn" value="radio8" id="radio8">
+                <input type="radio" name="radio-btn" value="radio9" id="radio9">
+                <input type="radio" name="radio-btn" value="radio10" id="radio10">
+                <input type="radio" name="radio-btn" value="radio11" id="radio11">
+                <input type="radio" name="radio-btn" value="radio12" id="radio12">
+                <input type="radio" name="radio-btn" value="radio13" id="radio13">
+                <input type="radio" name="radio-btn" value="radio14" id="radio14">
+                <input type="radio" name="radio-btn" value="radio15" id="radio15">
+                <input type="radio" name="radio-btn" value="radio16" id="radio16">
+                <input type="radio" name="radio-btn" value="radio17" id="radio17">
                 <!-- Radio Button Ends-->
                 <!-- Images Start -->
                 <div class="slider-image first"><!-- Animation Channel -->
@@ -155,215 +171,200 @@
                     <a href="https://www.facebook.com/profile.php?id=100067164591080">
                         <img src="Slideshow/Facebook.png" alt="" id="image17">
                     </a>
-                </div>
-                <!-- Images End -->
-                <!-- Auto Navigation starts -->
-                <div class="Navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                    <div class="auto-btn5"></div>
-                    <div class="auto-btn6"></div>
-                    <div class="auto-btn7"></div>
-                    <div class="auto-btn8"></div>
-                    <div class="auto-btn9"></div>
-                    <div class="auto-btn10"></div>
-                    <div class="auto-btn11"></div>
-                    <div class="auto-btn12"></div>
-                    <div class="auto-btn13"></div>
-                    <div class="auto-btn14"></div>
-                    <div class="auto-btn15"></div>
-                    <div class="auto-btn16"></div>
-                    <div class="auto-btn17"></div>
+                </div><!-- Images End -->
+                <div class="Navigation-auto"><!-- Auto Navigation starts -->
                     <div class="Auto-btn-img-Dark">
-                        <div class="auto-btn1">
-                            <img src="Radio Button (Dark)/Youtube.png" alt="" id="Animation-Btn-Dark">
-                        </div>
-                        <div class="auto-btn2">
-                            <img src="Radio Button (Dark)/Youtube.png" alt="" id="Music-Btn-Dark">
-                        </div>
-                        <div class="auto-btn3">
-                            <img src="Radio Button (Dark)/Youtube.png" alt="" id="Live-btn-Dark">
-                        </div>
-                        <div class="auto-btn4">
-                            <img src="Radio Button (Dark)/Youtube.png" alt="" id="Clips-btn-Dark">
-                        </div>
-                        <div class="auto-btn5">
-                            <img src="Radio Button (Dark)/WEBTOON.png" alt="" id="WEBTOON-btn-Dark">
-                        </div>
-                        <div class="auto-btn6">
-                            <img src="Radio Button (Dark)/Twitch.png" alt="" id="Twitch-btn-Dark">
-                        </div>
-                        <div class="auto-btn7">
-                            <img src="Radio Button (Dark)/Twitter.png" alt="" id="Twitter-btn-Dark">
-                        </div>
-                        <div class="auto-btn8">
-                            <img src="Radio Button (Dark)/Discord.png" alt="" id="Discord-btn-Dark">
-                        </div>
-                        <div class="auto-btn9">
-                            <img src="Radio Button (Dark)/Patreon.png" alt="" id="Patreon-btn-Dark">
-                        </div>
-                        <div class="auto-btn10">
-                            <img src="Radio Button (Dark)/Ko-fi.png" alt="" id="Ko-fi-btn-Dark">
-                        </div>
-                        <div class="auto-btn11">
-                            <img src="Radio Button (Dark)/TikTok.png" alt="" id="TikTok-btn-Dark">
-                        </div>
-                        <div class="auto-btn12">
-                            <img src="Radio Button (Dark)/Instagram.png" alt="" id="Instagram-btn-Dark">
-                        </div>
-                        <div class="auto-btn13">
-                            <img src="Radio Button (Dark)/Reddit.png" alt="" id="Reddit-btn-Dark">
-                        </div>
-                        <div class="auto-btn14">
-                            <img src="Radio Button (Dark)/Pinterest.png" alt="" id="Pinterest-btn-Dark">
-                        </div>
-                        <div class="auto-btn15">
-                            <img src="Radio Button (Dark)/Newgrounds.png" alt="" id="Newgrounds-btn-Dark">
-                        </div>
-                        <div class="auto-btn16">
-                            <img src="Radio Button (Dark)/Cara.png" alt="" id="Cara-btn-Dark">
-                        </div>
-                        <div class="auto-btn17">
-                            <img src="Radio Button (Dark)/Facebook.png" alt="" id="Facebook-btn-Dark">
-                        </div>
+                    <div class="auto-btn1">
+                        <img src="Radio Button (Dark)/Youtube.png" alt="" id="Animation-Btn-Dark">
+                    </div>
+                    <div class="auto-btn2">
+                        <img src="Radio Button (Dark)/Youtube.png" alt="" id="Music-Btn-Dark">
+                    </div>
+                    <div class="auto-btn3">
+                        <img src="Radio Button (Dark)/Youtube.png" alt="" id="Live-btn-Dark">
+                    </div>
+                    <div class="auto-btn4">
+                        <img src="Radio Button (Dark)/Youtube.png" alt="" id="Clips-btn-Dark">
+                    </div>
+                    <div class="auto-btn5">
+                        <img src="Radio Button (Dark)/WEBTOON.png" alt="" id="WEBTOON-btn-Dark">
+                    </div>
+                    <div class="auto-btn6">
+                        <img src="Radio Button (Dark)/Twitch.png" alt="" id="Twitch-btn-Dark">
+                    </div>
+                    <div class="auto-btn7">
+                        <img src="Radio Button (Dark)/Twitter.png" alt="" id="Twitter-btn-Dark">
+                    </div>
+                    <div class="auto-btn8">
+                        <img src="Radio Button (Dark)/Discord.png" alt="" id="Discord-btn-Dark">
+                    </div>
+                    <div class="auto-btn9">
+                        <img src="Radio Button (Dark)/Patreon.png" alt="" id="Patreon-btn-Dark">
+                    </div>
+                    <div class="auto-btn10">
+                        <img src="Radio Button (Dark)/Ko-fi.png" alt="" id="Ko-fi-btn-Dark">
+                    </div>
+                    <div class="auto-btn11">
+                        <img src="Radio Button (Dark)/TikTok.png" alt="" id="TikTok-btn-Dark">
+                    </div>
+                    <div class="auto-btn12">
+                        <img src="Radio Button (Dark)/Instagram.png" alt="" id="Instagram-btn-Dark">
+                    </div>
+                    <div class="auto-btn13">
+                        <img src="Radio Button (Dark)/Reddit.png" alt="" id="Reddit-btn-Dark">
+                    </div>
+                    <div class="auto-btn14">
+                        <img src="Radio Button (Dark)/Pinterest.png" alt="" id="Pinterest-btn-Dark">
+                    </div>
+                    <div class="auto-btn15">
+                        <img src="Radio Button (Dark)/Newgrounds.png" alt="" id="Newgrounds-btn-Dark">
+                    </div>
+                    <div class="auto-btn16">
+                        <img src="Radio Button (Dark)/Cara.png" alt="" id="Cara-btn-Dark">
+                    </div>
+                    <div class="auto-btn17">
+                        <img src="Radio Button (Dark)/Facebook.png" alt="" id="Facebook-btn-Dark">
+                    </div>
                     </div>
                     <div class="Auto-btn-img">
-                        <div class="auto-btn1">
-                            <img src="Radio Button/Youtube.png" alt="" id="Animation-Btn">
-                        </div>
-                        <div class="auto-btn2">
-                            <img src="Radio Button/Youtube.png" alt="" id="Music-Btn">
-                        </div>
-                        <div class="auto-btn3">
-                            <img src="Radio Button/Youtube.png" alt="" id="Live-btn">
-                        </div>
-                        <div class="auto-btn4">
-                            <img src="Radio Button/Youtube.png" alt="" id="Clips-btn">
-                        </div>
-                        <div class="auto-btn5">
-                            <img src="Radio Button/WEBTOON.png" alt="" id="WEBTOON-btn">
-                        </div>
-                        <div class="auto-btn6">
-                            <img src="Radio Button/Twitch.png" alt="" id="Twitch-btn">
-                        </div>
-                        <div class="auto-btn7">
-                            <img src="Radio Button/Twitter.png" alt="" id="Twitter-btn">
-                        </div>
-                        <div class="auto-btn8">
-                            <img src="Radio Button/Discord.png" alt="" id="Discord-btn">
-                        </div>
-                        <div class="auto-btn9">
-                            <img src="Radio Button/Patreon.png" alt="" id="Patreon-btn">
-                        </div>
-                        <div class="auto-btn10">
-                            <img src="Radio Button/Ko-fi.png" alt="" id="Ko-fi-btn">
-                        </div>
-                        <div class="auto-btn11">
-                            <img src="Radio Button/TikTok.png" alt="" id="TikTok-btn">
-                        </div>
-                        <div class="auto-btn12">
-                            <img src="Radio Button/Instagram.png" alt="" id="Instagram-btn">
-                        </div>
-                        <div class="auto-btn13">
-                            <img src="Radio Button/Reddit.png" alt="" id="Reddit-btn">
-                        </div>
-                        <div class="auto-btn14">
-                            <img src="Radio Button/Pinterest.png" alt="" id="Pinterest-btn">
-                        </div>
-                        <div class="auto-btn15">
-                            <img src="Radio Button/Newgrounds.png" alt="" id="Newgrounds-btn">
-                        </div>
-                        <div class="auto-btn16">
-                            <img src="Radio Button/Cara.png" alt="" id="Cara-btn">
-                        </div>
-                        <div class="auto-btn17">
-                            <img src="Radio Button/Facebook.png" alt="" id="Facebook-btn">
-                        </div>
+                    <div class="auto-btn1">
+                        <img src="Radio Button/Youtube.png" alt="" id="Animation-Btn">
+                    </div>
+                    <div class="auto-btn2">
+                        <img src="Radio Button/Youtube.png" alt="" id="Music-Btn">
+                    </div>
+                    <div class="auto-btn3">
+                        <img src="Radio Button/Youtube.png" alt="" id="Live-btn">
+                    </div>
+                    <div class="auto-btn4">
+                        <img src="Radio Button/Youtube.png" alt="" id="Clips-btn">
+                    </div>
+                    <div class="auto-btn5">
+                        <img src="Radio Button/WEBTOON.png" alt="" id="WEBTOON-btn">
+                    </div>
+                    <div class="auto-btn6">
+                        <img src="Radio Button/Twitch.png" alt="" id="Twitch-btn">
+                    </div>
+                    <div class="auto-btn7">
+                        <img src="Radio Button/Twitter.png" alt="" id="Twitter-btn">
+                    </div>
+                    <div class="auto-btn8">
+                        <img src="Radio Button/Discord.png" alt="" id="Discord-btn">
+                    </div>
+                    <div class="auto-btn9">
+                        <img src="Radio Button/Patreon.png" alt="" id="Patreon-btn">
+                    </div>
+                    <div class="auto-btn10">
+                        <img src="Radio Button/Ko-fi.png" alt="" id="Ko-fi-btn">
+                    </div>
+                    <div class="auto-btn11">
+                        <img src="Radio Button/TikTok.png" alt="" id="TikTok-btn">
+                    </div>
+                    <div class="auto-btn12">
+                        <img src="Radio Button/Instagram.png" alt="" id="Instagram-btn">
+                    </div>
+                    <div class="auto-btn13">
+                        <img src="Radio Button/Reddit.png" alt="" id="Reddit-btn">
+                    </div>
+                    <div class="auto-btn14">
+                        <img src="Radio Button/Pinterest.png" alt="" id="Pinterest-btn">
+                    </div>
+                    <div class="auto-btn15">
+                        <img src="Radio Button/Newgrounds.png" alt="" id="Newgrounds-btn">
+                    </div>
+                    <div class="auto-btn16">
+                        <img src="Radio Button/Cara.png" alt="" id="Cara-btn">
+                    </div>
+                    <div class="auto-btn17">
+                        <img src="Radio Button/Facebook.png" alt="" id="Facebook-btn">
                     </div>
                 </div>
-                <!-- Auto Navigation ends -->
-                <button class="slider-btn" id="prev" onclick="prev()"><</button>
-                <button class="slider-btn" id="next" onclick="next()">></button>
+                </div> <!-- Auto Navigation ends -->
+                <div class="Navigation-Manual"> <!-- Manual Navigation Starts-->
+            <div class="Manual-btn-img">
+                <label for="radio1" class="Manual-btn1">
+                        <img src="Radio Button/Youtube.png" alt="Animation" >
+                </label>
+                <label for="radio2" class="Manual-btn2">
+                    <img src="Radio Button/Youtube.png" alt="Music">
+                </label>
+                <label for="radio3" class="Manual-btn3">
+                    <img src="Radio Button/Youtube.png" alt="Live">
+                </label>
+                <label for="radio4" class="Manual-btn4">
+                    <img src="Radio Button/Youtube.png" alt="Clips And Highlights">
+                </label>
+                <label for="radio5" class="Manual-btn5">
+                    <img src="Radio Button/WEBTOON.png" alt="WEBTOON">
+                </label>
+                <label for="radio6" class="Manual-btn6">
+                    <img src="Radio Button/Twitch.png" alt="Twitch">
+                </label>
+                <label for="radio7" class="Manual-btn7">
+                    <img src="Radio Button/Twitter.png" alt="X/Twitter">
+                </label>
+                <label for="radio8" class="Manual-btn8">
+                    <img src="Radio Button/Discord.png" alt="Discord">
+                </label>
+                <label for="radio9" class="Manual-btn9">
+                    <img src="Radio Button/Patreon.png" alt="Patreon">
+                </label>
+                <label for="radio10" class="Manual-btn10">
+                    <img src="Radio Button/Ko-fi.png" alt="Ko-fi">
+                </label>
+                <label for="radio11" class="Manual-btn11">
+                    <img src="Radio Button/TikTok.png" alt="TikTok">
+                </label>
+                <label for="radio12" class="Manual-btn12">
+                    <img src="Radio Button/Instagram.png" alt="Instagram">
+                </label>
+                <label for="radio13" class="Manual-btn13">
+                    <img src="Radio Button/Reddit.png" alt="Reddit">
+                </label>
+                <label for="radio14" class="Manual-btn14">
+                    <img src="Radio Button/Pinterest.png" alt="Pinterest">
+                </label>
+                <label for="radio15" class="Manual-btn15">
+                    <img src="Radio Button/Newgrounds.png" alt="Newgrounds">
+                </label>
+                <label for="radio16" class="Manual-btn16">
+                    <img src="Radio Button/Cara.png" alt="Cara">
+                </label>
+                <label for="radio17" class="Manual-btn17">
+                    <img src="Radio Button/Facebook.png" alt="Facebook">
+                </label>
             </div>
-            <br>
-            <div class="Navigation-Manual"> <!-- Manual Navigation Starts-->
-                <div class="Manual-btn-img">
-                    <label for="radio1" class="Manual-btn1">
-                            <img src="Radio Button/Youtube.png" alt="Animation" >
-                    </label>
-                    <label for="radio2" class="Manual-btn2">
-                        <img src="Radio Button/Youtube.png" alt="Music">
-                    </label>
-                    <label for="radio3" class="Manual-btn3">
-                        <img src="Radio Button/Youtube.png" alt="Live">
-                    </label>
-                    <label for="radio4" class="Manual-btn4">
-                        <img src="Radio Button/Youtube.png" alt="Clips And Highlights">
-                    </label>
-                    <label for="radio5" class="Manual-btn5">
-                        <img src="Radio Button/WEBTOON.png" alt="WEBTOON">
-                    </label>
-                    <label for="radio6" class="Manual-btn6">
-                        <img src="Radio Button/Twitch.png" alt="Twitch">
-                    </label>
-                    <label for="radio7" class="Manual-btn7">
-                        <img src="Radio Button/Twitter.png" alt="X/Twitter">
-                    </label>
-                    <label for="radio8" class="Manual-btn8">
-                        <img src="Radio Button/Discord.png" alt="Discord">
-                    </label>
-                    <label for="radio9" class="Manual-btn9">
-                        <img src="Radio Button/Patreon.png" alt="Patreon">
-                    </label>
-                    <label for="radio10" class="Manual-btn10">
-                        <img src="Radio Button/Ko-fi.png" alt="Ko-fi">
-                    </label>
-                    <label for="radio11" class="Manual-btn11">
-                        <img src="Radio Button/TikTok.png" alt="TikTok">
-                    </label>
-                    <label for="radio12" class="Manual-btn12">
-                        <img src="Radio Button/Instagram.png" alt="Instagram">
-                    </label>
-                    <label for="radio13" class="Manual-btn13">
-                        <img src="Radio Button/Reddit.png" alt="Reddit">
-                    </label>
-                    <label for="radio14" class="Manual-btn14">
-                        <img src="Radio Button/Pinterest.png" alt="Pinterest">
-                    </label>
-                    <label for="radio15" class="Manual-btn15">
-                        <img src="Radio Button/Newgrounds.png" alt="Newgrounds">
-                    </label>
-                    <label for="radio16" class="Manual-btn16">
-                        <img src="Radio Button/Cara.png" alt="Cara">
-                    </label>
-                    <label for="radio17" class="Manual-btn17">
-                        <img src="Radio Button/Facebook.png" alt="Facebook">
-                    </label>
+                </div> <!-- Manual Navigation Ends-->
+                <div class="slider-btn">
+                    <button class="slider-btn" id="prev" onclick="prev()"><</button>
+                    <button class="slider-btn" id="next" onclick="next()">></button>
                 </div>
-            </div> <!-- Manual Navigation Ends-->
-        </div><!-- Slideshow Ends-->
-        <p1><b>Links To All Of <br> My Social Media</b></p1>
-        <div class="intro">
-            <h2>Welcome!!!</h2>
+                    </div>
+                </div><!-- Slideshow Ends-->
+            </div>
+        </div>
+        <div class="Grid" id="Grid2">
+            <p1 class="all-links">
+            <b>Links To All Of My Social Media</b>
+            </p1>
+        </div>
+        <div class="Grid" id="Grid3">
+            <div class="intro">
+            <h2>Welcome!!!
+            </h2>
             <br>
-            <p2>I'm Creator De Coatrack Or Solomon De Coatrack
-            <br>And Welcome To My Website.
-            <br>I'm Using This Website As Links
-            <br>To All Of My Social Media.
-            <br>You Can Visit My Channels By
-            <br>Clicking The Pictures In The Slideshow.
+            <p2>I'm Creator De Coatrack Or Solomon De Coatrack And Welcome To My Website. I'm Using This Website As Links To All Of My Social Media You Can Visit My Channels By Clicking The Pictures In The Slideshow.
             </p2>
-            <h3><br>Thank You For 
-                <br>Visiting My Website!!!
+            <h3><br>Thank You For Visiting My Website!!!
             </h3>
+            </div>
         </div>
-        <div>
-            <img class="Profile-Banner" src="Website-Profile-Picture.jpg" alt="">
+        <div class="Grid" id="Grid4">
+            <div class="Profile-Banner">
+            <img src="Website-Profile-Picture.jpg" alt="">
+            </div>
         </div>
-        
-        <script src="Script.js"></script>
     </div> <!-- Body Ends -->
+    <script src="Script.js"></script>
 </body>
 </html>

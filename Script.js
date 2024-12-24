@@ -306,3 +306,11 @@ else if (document.getElementById('radio17').checked == true) {
 document.querySelector(".popupclose").addEventListener("click", function(){
     document.querySelector(".modal").style.display = "none";
 });
+
+const item = document.querySelector('.tab');
+  item.addEventListener('wheel', (event) => {
+    event.preventDefault();
+    item.scrollBy({
+        left: event.deltaY
+    })
+  });
