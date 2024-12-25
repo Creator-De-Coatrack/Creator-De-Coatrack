@@ -229,14 +229,14 @@ label #Sidebar-Open,label #Sidebar-Close{
 }
 label #Sidebar-Close{
     width: 5svw;
-    height: 50svh;
+    height: 30svw;
     left: 0;
     color: #ff0000;
-    font-size: 2.5vb;
+    font-size: 3vb;
     font-weight: bold;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    margin-top: 20svh;
+    margin-top: 16svh;
     background-color: #171747;
     z-index: 100000000000000000000000000000000000000000000000000000000000000000000000000;
     transition: all .5s ease;
@@ -364,7 +364,7 @@ h3{
 .slider-grid{
     position: absolute;
     width: 64svw;
-    height: 100%;
+    height: 49svw;
     overflow: hidden;
     display: grid;
     border-radius: 1svb;
@@ -465,6 +465,8 @@ h3{
     width: 100%;
     height: 5svh;
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(10, 5.7vw);
     grid-template-rows: repeat(2, 5.7vw);
     flex-wrap: wrap;
@@ -481,6 +483,8 @@ h3{
     width: 100%;
     height: 5svh;
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(10, 5.7vw);
     grid-template-rows: repeat(2, 5.7vw);
     column-gap: 0.75svw;
@@ -606,13 +610,14 @@ div{
     margin-top: 57%;
     display: flex;
     z-index: 100;
-    overflow: hidden;
 }
 .Manual-btn-img{
     cursor: pointer;
     width: 100%;
     height: 5svh;
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(10, 5.7vw);
     grid-template-rows: repeat(2, 5.7vw);
     column-gap: 0.75svw;
@@ -943,7 +948,7 @@ button.popupclose{
         height: 3svh;
     }
     .tab::-webkit-scrollbar-thumb{
-        border: solid 0.5svb;
+        border: solid #fff 0.5svb;
     }
     .tab::-webkit-scrollbar-track{
         border-block: solid 0.5svb;
@@ -962,7 +967,7 @@ button.popupclose{
     width: 3svw;
     }
     .Sidebar::-webkit-scrollbar-thumb{
-    border: solid 0.5svb;
+    border: solid #fff 0.5svb;
     }
     .Sidebar::-webkit-scrollbar-track{
     background: linear-gradient(#804000, #800040);
@@ -977,8 +982,9 @@ button.popupclose{
     }
     label #Sidebar-Close{
     width: 8svw;
-    height: 40svh;
-    font-size: 5svb;
+    height: 60svw;
+    font-size: 5.5svb;
+    margin-top: 8svh;
     }
     #Sidebar-Check:checked ~ label #Sidebar-Close{
         left: 50svw;
@@ -998,12 +1004,19 @@ button.popupclose{
     }
     .slider-grid{
         width: 80svw;
+        height: 61svw;
     }
     .slider-frame{
         height: 45svw;
     }
     .slider-btn{
         width: 80svw;
+    }
+    #prev{
+        height: 45svw;
+    }
+    #next{
+        height: 45svw;
     }
     .Auto-btn-img{
         height: 7svh;
