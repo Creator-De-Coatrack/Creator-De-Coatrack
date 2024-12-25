@@ -987,9 +987,10 @@ button.popupclose{
     margin-top: 8svh;
     }
     #Sidebar-Check:checked ~ label #Sidebar-Close{
-        left: 50svw;
-        width: 20svw;
-        font-size: 8vb;
+    left: 50svw;
+    width: 12svw;
+    height: 90svw;
+    font-size: 8vb;
     }
     /*Sidebar End*/
 
