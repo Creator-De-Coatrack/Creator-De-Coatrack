@@ -948,10 +948,10 @@ button.popupclose{
         height: 3svh;
     }
     .tab::-webkit-scrollbar-thumb{
-        border: solid #fff 0.5svb;
+        border: solid #fff 0.7svb;
     }
     .tab::-webkit-scrollbar-track{
-        border-block: solid 0.5svb;
+        border-block: solid 0.7svb;
     }
     .website{
         font-size: 1.5svh;
@@ -964,14 +964,14 @@ button.popupclose{
         left: -50svw;
     }
     .Sidebar::-webkit-scrollbar {
-    width: 3svw;
+    width: 5svw;
     }
     .Sidebar::-webkit-scrollbar-thumb{
-    border: solid #fff 0.5svb;
+    border: solid #fff 1svb;
     }
     .Sidebar::-webkit-scrollbar-track{
     background: linear-gradient(#804000, #800040);
-    border-inline: solid 0.5svb;
+    border-inline: solid 1svb;
     border-color: #000;
     }
     .side-website{
