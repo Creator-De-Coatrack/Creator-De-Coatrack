@@ -376,7 +376,8 @@ h3{
     height: 36svw;
     aspect-ratio: 16/9;
     border-radius: 1svb;
-    overflow: visible;
+    overflow-x: hidden;
+    overflow-y: visible;
     display: grid;
 }
 /*Slideshow Frame End*/
