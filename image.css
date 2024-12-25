@@ -1015,9 +1015,13 @@ button.popupclose{
     }
     #prev{
         height: 45svw;
+        font-size: 15svw;
+        width: 12svw;
     }
     #next{
         height: 45svw;
+        font-size: 15svw;
+        width: 12vw;
     }
     .Auto-btn-img{
         height: 7svh;
