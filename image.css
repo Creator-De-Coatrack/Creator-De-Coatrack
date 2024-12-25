@@ -365,7 +365,8 @@ h3{
     position: absolute;
     width: 64svw;
     height: 100%;
-    overflow: visible;
+    overflow-x: hidden;
+    overflow-y: visible;
     display: grid;
     border-radius: 1svb;
 }
