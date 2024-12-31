@@ -540,60 +540,72 @@ div{
         }
     }
     #radio8:checked ~ .Navigation-auto .auto-btn8{
-        #Discord-btn-Dark{
+        #Bluesky-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio9:checked ~ .Navigation-auto .auto-btn9{
-        #Patreon-btn-Dark{
-            opacity: 0%;
-            transition: 0.5s;
-        }
-    }
-    #radio10:checked ~ .Navigation-auto .auto-btn10{
-        #Ko-fi-btn-Dark{
-            opacity: 0%;
-            transition: 0.5s;
-        }
-    }
-    #radio11:checked ~ .Navigation-auto .auto-btn11{
-        #TikTok-btn-Dark{
-            opacity: 0%;
-            transition: 0.5s;
-        }
-    }
-    #radio12:checked ~ .Navigation-auto .auto-btn12{
         #Instagram-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
+    #radio10:checked ~ .Navigation-auto .auto-btn10{
+        #Pixiv-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio11:checked ~ .Navigation-auto .auto-btn11{
+        #Discord-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio12:checked ~ .Navigation-auto .auto-btn12{
+        #Patreon-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
     #radio13:checked ~ .Navigation-auto .auto-btn13{
-        #Reddit-btn-Dark{
+        #Ko-fi-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio14:checked ~ .Navigation-auto .auto-btn14{
-        #Pinterest-btn-Dark{
+        #TikTok-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio15:checked ~ .Navigation-auto .auto-btn15{
-        #Newgrounds-btn-Dark{
+        #Reddit-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio16:checked ~ .Navigation-auto .auto-btn16{
-        #Cara-btn-Dark{
+        #Pinterest-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio17:checked ~ .Navigation-auto .auto-btn17{
+        #Newgrounds-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio18:checked ~ .Navigation-auto .auto-btn18{
+        #Cara-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio19:checked ~ .Navigation-auto .auto-btn19{
         #Facebook-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
@@ -681,6 +693,12 @@ div{
     .Manual-btn17{
         opacity: 0% ;
     }
+    .Manual-btn18{
+        opacity: 0% ;
+    }
+    .Manual-btn19{
+        opacity: 0% ;
+    }
 }
 div{
     .Manual-btn1:hover{
@@ -751,6 +769,14 @@ div{
         opacity: 100% ;
         transition: 0.5s;
     }
+    .Manual-btn18:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
+    .Manual-btn19:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
 }
 div{
 #radio1:checked ~ .first{
@@ -803,6 +829,12 @@ div{
 }
 #radio17:checked ~ .first{
     margin-left: -320%;
+}
+#radio18:checked ~ .first{
+    margin-left: -340%;
+}
+#radio19:checked ~ .first{
+    margin-left: -360%;
 }
 
 }

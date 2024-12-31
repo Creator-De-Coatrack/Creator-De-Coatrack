@@ -84,6 +84,16 @@ document.getElementById("radio17").onclick = function(){
     slideTimer = setInterval(slideIt, 3000);
     changeImage(getElementById("image17"));
 }
+document.getElementById("radio18").onclick = function(){
+    clearInterval(slideTimer);
+    slideTimer = setInterval(slideIt, 3000);
+    changeImage(getElementById("image18"));
+}
+document.getElementById("radio19").onclick = function(){
+    clearInterval(slideTimer);
+    slideTimer = setInterval(slideIt, 3000);
+    changeImage(getElementById("image19"));
+}
 function slideIt() {
     if (document.getElementById('radio1').checked == true) {
             document.getElementById('radio2').click();
@@ -150,6 +160,14 @@ function slideIt() {
         changeImage(getElementById("image17"));
     }
     else if (document.getElementById('radio17').checked == true) {
+        document.getElementById('radio18').click();
+        changeImage(getElementById("image18"));
+    }
+    else if (document.getElementById('radio18').checked == true) {
+        document.getElementById('radio19').click();
+        changeImage(getElementById("image19"));
+    }
+    else if (document.getElementById('radio19').checked == true) {
         document.getElementById('radio1').click();
         changeImage(getElementById("image1"));
     }
@@ -158,6 +176,14 @@ function slideIt() {
         }
 }
 function prev(){
+    if (document.getElementById('radio19').checked == true) {
+        document.getElementById('radio18').click();
+        changeImage(getElementById("image18"));
+    }
+    if (document.getElementById('radio18').checked == true) {
+        document.getElementById('radio17').click();
+        changeImage(getElementById("image17"));
+    }
     if (document.getElementById('radio17').checked == true) {
         document.getElementById('radio16').click();
         changeImage(getElementById("image16"));
@@ -296,6 +322,14 @@ else if (document.getElementById('radio16').checked == true) {
     changeImage(getElementById("image17"));
 }
 else if (document.getElementById('radio17').checked == true) {
+    document.getElementById('radio18').click();
+    changeImage(getElementById("image18"));
+}
+else if (document.getElementById('radio18').checked == true) {
+    document.getElementById('radio19').click();
+    changeImage(getElementById("image19"));
+}
+else if (document.getElementById('radio19').checked == true) {
     document.getElementById('radio1').click();
     changeImage(getElementById("image1"));
 }
