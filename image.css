@@ -552,60 +552,66 @@ div{
         }
     }
     #radio10:checked ~ .Navigation-auto .auto-btn10{
-        #Pixiv-btn-Dark{
+        #Threads-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio11:checked ~ .Navigation-auto .auto-btn11{
-        #Discord-btn-Dark{
+        #Pixiv-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio12:checked ~ .Navigation-auto .auto-btn12{
-        #Patreon-btn-Dark{
+        #Discord-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio13:checked ~ .Navigation-auto .auto-btn13{
-        #Ko-fi-btn-Dark{
+        #Patreon-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio14:checked ~ .Navigation-auto .auto-btn14{
-        #TikTok-btn-Dark{
+        #Ko-fi-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio15:checked ~ .Navigation-auto .auto-btn15{
-        #Reddit-btn-Dark{
+        #TikTok-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio16:checked ~ .Navigation-auto .auto-btn16{
-        #Pinterest-btn-Dark{
+        #Reddit-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio17:checked ~ .Navigation-auto .auto-btn17{
-        #Newgrounds-btn-Dark{
+        #Pinterest-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio18:checked ~ .Navigation-auto .auto-btn18{
-        #Cara-btn-Dark{
+        #Newgrounds-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio19:checked ~ .Navigation-auto .auto-btn19{
+        #Cara-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio20:checked ~ .Navigation-auto .auto-btn20{
         #Facebook-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
@@ -699,6 +705,9 @@ div{
     .Manual-btn19{
         opacity: 0% ;
     }
+    .Manual-btn20{
+        opacity: 0% ;
+    }
 }
 div{
     .Manual-btn1:hover{
@@ -777,6 +786,10 @@ div{
         opacity: 100% ;
         transition: 0.5s;
     }
+    .Manual-btn20:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
 }
 div{
 #radio1:checked ~ .first{
@@ -836,7 +849,9 @@ div{
 #radio19:checked ~ .first{
     margin-left: -360%;
 }
-
+#radio20:checked ~ .first{
+    margin-left: -380%;
+}
 }
 /*manual navigation End*/
 

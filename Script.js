@@ -94,6 +94,11 @@ document.getElementById("radio19").onclick = function(){
     slideTimer = setInterval(slideIt, 3000);
     changeImage(getElementById("image19"));
 }
+document.getElementById("radio20").onclick = function(){
+    clearInterval(slideTimer);
+    slideTimer = setInterval(slideIt, 3000);
+    changeImage(getElementById("image20"));
+}
 function slideIt() {
     if (document.getElementById('radio1').checked == true) {
             document.getElementById('radio2').click();
@@ -168,6 +173,10 @@ function slideIt() {
         changeImage(getElementById("image19"));
     }
     else if (document.getElementById('radio19').checked == true) {
+        document.getElementById('radio20').click();
+        changeImage(getElementById("image20"));
+    }
+    else if (document.getElementById('radio20').checked == true) {
         document.getElementById('radio1').click();
         changeImage(getElementById("image1"));
     }
@@ -176,31 +185,35 @@ function slideIt() {
         }
 }
 function prev(){
-    if (document.getElementById('radio19').checked == true) {
+    if (document.getElementById('radio20').checked == true) {
+        document.getElementById('radio19').click();
+        changeImage(getElementById("image19"));
+    }
+    else if (document.getElementById('radio19').checked == true) {
         document.getElementById('radio18').click();
         changeImage(getElementById("image18"));
     }
-    if (document.getElementById('radio18').checked == true) {
+    else if (document.getElementById('radio18').checked == true) {
         document.getElementById('radio17').click();
         changeImage(getElementById("image17"));
     }
-    if (document.getElementById('radio17').checked == true) {
+    else if (document.getElementById('radio17').checked == true) {
         document.getElementById('radio16').click();
         changeImage(getElementById("image16"));
     }
-    if (document.getElementById('radio16').checked == true) {
+    else if (document.getElementById('radio16').checked == true) {
         document.getElementById('radio15').click();
         changeImage(getElementById("image15"));
     }
-    if (document.getElementById('radio15').checked == true) {
+    else if (document.getElementById('radio15').checked == true) {
         document.getElementById('radio14').click();
         changeImage(getElementById("image14"));
     }
-    if (document.getElementById('radio14').checked == true) {
+    else if (document.getElementById('radio14').checked == true) {
         document.getElementById('radio13').click();
         changeImage(getElementById("image13"));
     }
-    if (document.getElementById('radio13').checked == true) {
+    else if (document.getElementById('radio13').checked == true) {
         document.getElementById('radio12').click();
         changeImage(getElementById("image12"));
     }
@@ -249,8 +262,8 @@ function prev(){
     changeImage(getElementById("image1"));
     } 
     else if (document.getElementById('radio1').checked == true) {
-    document.getElementById('radio17').click();
-    changeImage(getElementById("image17"));
+    document.getElementById('radio20').click();
+    changeImage(getElementById("image20"));
     } 
     else {
       //do nothing
@@ -330,6 +343,10 @@ else if (document.getElementById('radio18').checked == true) {
     changeImage(getElementById("image19"));
 }
 else if (document.getElementById('radio19').checked == true) {
+    document.getElementById('radio20').click();
+    changeImage(getElementById("image20"));
+}
+else if (document.getElementById('radio20').checked == true) {
     document.getElementById('radio1').click();
     changeImage(getElementById("image1"));
 }
