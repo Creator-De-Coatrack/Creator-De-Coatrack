@@ -290,7 +290,7 @@ label #Sidebar-Close{
 .all-links{
     position: absolute;
     text-align: center;
-    margin-top: 49svw;
+    margin-top: 56svw;
     width: 64svw;
     font-size: 6svw;
     background-color: #171747;
@@ -364,7 +364,7 @@ h3{
 .slider-grid{
     position: absolute;
     width: 64svw;
-    height: 49svw;
+    height: 56svw;
     overflow: hidden;
     display: grid;
     border-radius: 1svb;
@@ -564,54 +564,60 @@ div{
         }
     }
     #radio12:checked ~ .Navigation-auto .auto-btn12{
-        #Discord-btn-Dark{
+        #DeviantArt-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio13:checked ~ .Navigation-auto .auto-btn13{
-        #Patreon-btn-Dark{
+        #Discord-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio14:checked ~ .Navigation-auto .auto-btn14{
-        #Ko-fi-btn-Dark{
+        #Patreon-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio15:checked ~ .Navigation-auto .auto-btn15{
-        #TikTok-btn-Dark{
+        #Ko-fi-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio16:checked ~ .Navigation-auto .auto-btn16{
-        #Reddit-btn-Dark{
+        #TikTok-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio17:checked ~ .Navigation-auto .auto-btn17{
-        #Pinterest-btn-Dark{
+        #Reddit-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio18:checked ~ .Navigation-auto .auto-btn18{
-        #Newgrounds-btn-Dark{
+        #Pinterest-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio19:checked ~ .Navigation-auto .auto-btn19{
-        #Cara-btn-Dark{
+        #Newgrounds-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
         }
     }
     #radio20:checked ~ .Navigation-auto .auto-btn20{
+        #Cara-btn-Dark{
+            opacity: 0%;
+            transition: 0.5s;
+        }
+    }
+    #radio21:checked ~ .Navigation-auto .auto-btn21{
         #Facebook-btn-Dark{
             opacity: 0%;
             transition: 0.5s;
@@ -708,6 +714,9 @@ div{
     .Manual-btn20{
         opacity: 0% ;
     }
+    .Manual-btn21{
+        opacity: 0% ;
+    }
 }
 div{
     .Manual-btn1:hover{
@@ -790,6 +799,10 @@ div{
         opacity: 100% ;
         transition: 0.5s;
     }
+    .Manual-btn21:hover{
+        opacity: 100% ;
+        transition: 0.5s;
+    }
 }
 div{
 #radio1:checked ~ .first{
@@ -851,6 +864,9 @@ div{
 }
 #radio20:checked ~ .first{
     margin-left: -380%;
+}
+#radio21:checked ~ .first{
+    margin-left: -400%;
 }
 }
 /*manual navigation End*/
@@ -1054,7 +1070,7 @@ button.popupclose{
     }
     .slider-grid{
         width: 80svw;
-        height: 62svw;
+        height: 70svw;
     }
     .slider-frame{
         height: 45svw;
@@ -1108,13 +1124,13 @@ button.popupclose{
         }
     }
     .all-links{
-        margin-top: 63svw;
+        margin-top: 71svw;
         width: 80svw;
         font-size: 7svw;
         border: solid #ff9b00 1svb;
     }
     .Profile-Banner{
-        margin-top: 87svw;
+        margin-top: 95svw;
         width: 80svw;
         padding-inline: 0svw;
         img{
@@ -1122,7 +1138,7 @@ button.popupclose{
         }
     }
     .intro{
-        margin-top: 123svw;
+        margin-top: 131svw;
         width: 80svw;
         margin-inline: 0svw;
         border: solid #ff9b00 1svb;
