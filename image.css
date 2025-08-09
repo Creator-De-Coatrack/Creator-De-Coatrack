@@ -1028,14 +1028,14 @@ button.popupclose{
     height: 60svw;
     font-size: 5.5svb;
     margin-top: 8svh;
-    border: solid #ff9b00 1svb;
+    border: solid #ff9b00 0.75svb;
     }
     #Sidebar-Check:checked ~ label #Sidebar-Close{
     left: 50svw;
     width: 12svw;
     height: 90svw;
     font-size: 8vb;
-    border: solid #ff9b00 1.5svb;
+    border: solid #ff9b00 1svb;
     }
     /*Sidebar End*/
 
@@ -1058,12 +1058,15 @@ button.popupclose{
     }
     .slider-btn{
         width: 80svw;
+        font-size: 12svw;
     }
     #prev{
         height: 45svw;
+        width: 12svw;
     }
     #next{
         height: 45svw;
+        width: 12svw;
     }
     .Navigation-auto{
         margin-top: 58%;
@@ -1108,21 +1111,21 @@ button.popupclose{
         margin-top: 71svw;
         width: 80svw;
         font-size: 7svw;
-        border: solid #ff9b00 1svb;
+        border: solid #ff9b00 0.5svb;
     }
     .Profile-Banner{
         margin-top: 95svw;
         width: 80svw;
         padding-inline: 0svw;
         img{
-            border: solid #ff9b00 1svb;
+            border: solid #ff9b00 0.5svb;
         }
     }
     .intro{
         margin-top: 131svw;
         width: 80svw;
         margin-inline: 0svw;
-        border: solid #ff9b00 1svb;
+        border: solid #ff9b00 0.5svb;
     }
     h2{
         font-size: 10svw;
